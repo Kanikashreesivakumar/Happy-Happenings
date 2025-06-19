@@ -27,7 +27,7 @@ export default function PackagesPage() {
       name: "Silver",
       icon: Star,
       price: "$2,999",
-      description: "Perfect for intimate gatherings and smaller celebrations",
+      description: "Perfect celebrations",
       features: [
         "Event planning consultation (2 sessions)",
         "Venue recommendations",

@@ -42,7 +42,7 @@ export default function ServicesPage() {
       id: "weddings",
       icon: Heart,
       title: "Weddings",
-      description: "Your perfect day deserves perfect planning. From intimate ceremonies to grand celebrations.",
+      description: "Your perfect day timate ceremonies to grand celebrations.",
       image: "/placeholder.svg?height=500&width=700&text=Elegant+Wedding+Ceremony",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Wedding+Reception",
@@ -63,7 +63,7 @@ export default function ServicesPage() {
       id: "birthdays",
       icon: Gift,
       title: "Birthday Celebrations",
-      description: "Make every birthday unforgettable with themed parties and personalized touches.",
+      description: "Make every emed parties and personalized touches.",
       image: "/placeholder.svg?height=500&width=700&text=Fun+Birthday+Party",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Birthday+Decorations",

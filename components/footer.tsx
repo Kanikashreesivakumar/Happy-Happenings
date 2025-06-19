@@ -127,7 +127,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Happy Happenings. All rights reserved. |
             <Link href="/privacy" className="hover:text-rose-500 transition-colors ml-1">
               Privacy Policy
-            </Link>{" "}
+            </Link>
             |
             <Link href="/terms" className="hover:text-rose-500 transition-colors ml-1">
               Terms of Service
