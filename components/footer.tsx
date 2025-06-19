@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+          
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Image
@@ -34,7 +34,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
@@ -66,7 +66,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
+          
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Our Services</h3>
             <ul className="space-y-2">
@@ -98,7 +98,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contact Us</h3>
             <div className="space-y-3">
