@@ -46,7 +46,7 @@ const staggerContainer = {
 export default function BookNowPage() {
   const [currentStep, setCurrentStep] = useState(1)
   const [formData, setFormData] = useState({
-    // Personal Information
+   
     firstName: "",
     lastName: "",
     email: "",

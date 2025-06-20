@@ -105,7 +105,7 @@ export default function PackagesPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white pt-16">
-      {/* Hero Section */}
+      
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
@@ -128,7 +128,6 @@ export default function PackagesPage() {
         </div>
       </section>
 
-      {/* Packages Grid */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div

@@ -32,7 +32,7 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
+
     console.log("Form submitted:", formData)
   }
 
@@ -41,7 +41,7 @@ export default function ContactPage() {
   }
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "1234567890" // Replace with actual WhatsApp number
+    const phoneNumber = "7418761589" 
     const message = `Hi! I'm interested in your event planning services.
 
 Event Details:
@@ -59,7 +59,7 @@ Message: ${formData.message}`
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white pt-16">
-      {/* Hero Section */}
+ 
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
@@ -76,7 +76,7 @@ Message: ${formData.message}`
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Ready to start planning your dream event? Get in touch with us today and let's create something magical
+            Ready to s
             together.
           </motion.p>
         </div>
@@ -84,7 +84,7 @@ Message: ${formData.message}`
 
       <div className="max-w-7xl mx-auto px-4 pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Contact Information */}
+          
           <motion.div
             className="lg:col-span-1"
             initial={{ opacity: 0, x: -50 }}
@@ -157,7 +157,7 @@ Message: ${formData.message}`
             </div>
           </motion.div>
 
-          {/* Contact Form */}
+
           <motion.div
             className="lg:col-span-2"
             initial={{ opacity: 0, x: 50 }}
@@ -284,19 +284,7 @@ Message: ${formData.message}`
         </div>
       </div>
 
-      {/* Map Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-rose-50 to-pink-50">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl font-serif text-gray-800 mb-4">Visit Our Office</h2>
-            <p className="text-xl text-gray-600">Come see us for an in-person consultation</p>
-          </motion.div>
+      
 
           <motion.div
             className="bg-gray-200 h-96 rounded-lg flex items-center justify-center"
@@ -307,8 +295,7 @@ Message: ${formData.message}`
           >
             <p className="text-gray-600 text-lg">Interactive Map Would Be Embedded Here</p>
           </motion.div>
-        </div>
-      </section>
+      
     </div>
   )
 }
