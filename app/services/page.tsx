@@ -105,7 +105,7 @@ export default function ServicesPage() {
       id: "corporate",
       icon: Users,
       title: "Corporate Events",
-      description: "Professional on clients and employees.",
+      description: "Professional  employees.",
       image: "/placeholder.svg?height=500&width=700&text=Professional+Corporate+Event",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Corporate+Networking",
@@ -126,7 +126,7 @@ export default function ServicesPage() {
       id: "baby-showers",
       icon: Baby,
       title: "Baby Showers",
-      description: "Welcome  shower celebrations.",
+      description: "Welcome celebrations.",
       image: "/placeholder.svg?height=500&width=700&text=Cute+Baby+Shower",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Baby+Shower+Decorations",
@@ -147,7 +147,7 @@ export default function ServicesPage() {
       id: "anniversaries",
       icon: Calendar,
       title: "Anniversaries",
-      description: "Celebrate anniversary parties.",
+      description: "Celebrate parties.",
       image: "/placeholder.svg?height=500&width=700&text=Elegant+Anniversary+Party",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Anniversary+Decorations",

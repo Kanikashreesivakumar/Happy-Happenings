@@ -253,14 +253,14 @@ export default function PackagesPage() {
                   "Our process.",
               },
               {
-                question: "Do you offer payment plans?",
+                question: "Do you ?",
                 answer:
-                  "Yes, we offer flexible payment plans to make our services accessible. We typically require a 50% deposit to secure your date, with the balance due 30 days before your event.",
+                  "Yes, we offer require a 50% deposit to secure your date, with the balance due 30 days before your event.",
               },
               {
                 question: "How far in advance should I book?",
                 answer:
-                  "We recommend booking at least 3-6 months in advance for optimal vendor availability and planning time. However, we can accommodate shorter timelines when possible.",
+                  "We recommend booking at  and planning time. However, we can accommodate shorter timelines when possible.",
               },
             ].map((faq, index) => (
               <motion.div key={index} variants={fadeInUp}>
