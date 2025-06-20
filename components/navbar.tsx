@@ -46,7 +46,7 @@ export default function Navbar() {
     },
   ]
 
-  // Custom NavigationMenuLink component with enhanced hover effects
+ 
   const CustomNavLink = ({ href, children, className, ...props }: any) => (
     <Link href={href} legacyBehavior passHref>
       <NavigationMenuLink className={className} {...props}>
@@ -64,7 +64,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+         
           <Link href="/" className="flex items-center gap-2 group">
             <Image
               src="/placeholder.svg?height=40&width=120&text=Happy+Happenings+Logo"
@@ -75,11 +75,10 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-2">
             <NavigationMenu>
               <NavigationMenuList className="gap-1">
-                {/* Home */}
+                
                 <NavigationMenuItem>
                   <CustomNavLink
                     href="/"
@@ -89,14 +88,14 @@ export default function Navbar() {
                       "before:scale-0 before:opacity-0 hover:before:scale-100 hover:before:opacity-100",
                       isScrolled
                         ? "text-gray-700 hover:text-rose-600 before:bg-rose-50 hover:shadow-sm"
-                        : "text-white hover:text-rose-200 before:bg-white/10 hover:shadow-lg",
+                        : "text-black hover:text-rose-200 before:bg-white/10 hover:shadow-lg",
                     )}
                   >
                     <span className="relative z-10">Home</span>
                   </CustomNavLink>
                 </NavigationMenuItem>
 
-                {/* Services Dropdown */}
+              
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
                     className={cn(
@@ -106,7 +105,7 @@ export default function Navbar() {
                       "data-[state=open]:before:scale-100 data-[state=open]:before:opacity-100",
                       isScrolled
                         ? "text-gray-700 hover:text-rose-600 before:bg-rose-50 data-[state=open]:text-rose-600 data-[state=open]:before:bg-rose-50 hover:shadow-sm"
-                        : "text-white hover:text-rose-200 before:bg-white/10 data-[state=open]:text-rose-200 data-[state=open]:before:bg-white/10 hover:shadow-lg",
+                        : "text-black hover:text-rose-200 before:bg-white/10 data-[state=open]:text-rose-200 data-[state=open]:before:bg-white/10 hover:shadow-lg",
                     )}
                   >
                     <span className="relative z-10 flex items-center gap-1">
@@ -137,7 +136,6 @@ export default function Navbar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                {/* Gallery Dropdown */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
                     className={cn(
@@ -147,7 +145,7 @@ export default function Navbar() {
                       "data-[state=open]:before:scale-100 data-[state=open]:before:opacity-100",
                       isScrolled
                         ? "text-gray-700 hover:text-rose-600 before:bg-rose-50 data-[state=open]:text-rose-600 data-[state=open]:before:bg-rose-50 hover:shadow-sm"
-                        : "text-white hover:text-rose-200 before:bg-white/10 data-[state=open]:text-rose-200 data-[state=open]:before:bg-white/10 hover:shadow-lg",
+                        : "text-black hover:text-rose-200 before:bg-white/10 data-[state=open]:text-rose-200 data-[state=open]:before:bg-white/10 hover:shadow-lg",
                     )}
                   >
                     <span className="relative z-10 flex items-center gap-1">
@@ -188,8 +186,7 @@ export default function Navbar() {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-
-                {/* Packages */}
+                
                 <NavigationMenuItem>
                   <CustomNavLink
                     href="/packages"
@@ -199,14 +196,14 @@ export default function Navbar() {
                       "before:scale-0 before:opacity-0 hover:before:scale-100 hover:before:opacity-100",
                       isScrolled
                         ? "text-gray-700 hover:text-rose-600 before:bg-rose-50 hover:shadow-sm"
-                        : "text-white hover:text-rose-200 before:bg-white/10 hover:shadow-lg",
+                        : "text-black hover:text-rose-200 before:bg-white/10 hover:shadow-lg",
                     )}
                   >
                     <span className="relative z-10">Packages</span>
                   </CustomNavLink>
                 </NavigationMenuItem>
 
-                {/* Testimonials */}
+               
                 <NavigationMenuItem>
                   <CustomNavLink
                     href="/testimonials"
@@ -216,14 +213,13 @@ export default function Navbar() {
                       "before:scale-0 before:opacity-0 hover:before:scale-100 hover:before:opacity-100",
                       isScrolled
                         ? "text-gray-700 hover:text-rose-600 before:bg-rose-50 hover:shadow-sm"
-                        : "text-white hover:text-rose-200 before:bg-white/10 hover:shadow-lg",
+                        : "text-black hover:text-rose-200 before:bg-white/10 hover:shadow-lg",
                     )}
                   >
                     <span className="relative z-10">Testimonials</span>
                   </CustomNavLink>
                 </NavigationMenuItem>
 
-                {/* Contact */}
                 <NavigationMenuItem>
                   <CustomNavLink
                     href="/contact"
@@ -233,7 +229,7 @@ export default function Navbar() {
                       "before:scale-0 before:opacity-0 hover:before:scale-100 hover:before:opacity-100",
                       isScrolled
                         ? "text-gray-700 hover:text-rose-600 before:bg-rose-50 hover:shadow-sm"
-                        : "text-white hover:text-rose-200 before:bg-white/10 hover:shadow-lg",
+                        : "text-black hover:text-rose-200 before:bg-white/10 hover:shadow-lg",
                     )}
                   >
                     <span className="relative z-10">Contact</span>
@@ -242,10 +238,9 @@ export default function Navbar() {
               </NavigationMenuList>
             </NavigationMenu>
 
-            {/* Book Now Button */}
             <Button
               size="sm"
-              className="relative ml-4 bg-rose-500 hover:bg-rose-600 text-white rounded-full px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5 group overflow-hidden"
+              className="relative ml-4 bg-rose-500 hover:bg-rose-600 text-black rounded-full px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5 group overflow-hidden"
               asChild
             >
               <Link href="/book-now">
