@@ -68,7 +68,6 @@
   }
 }
 
-/* Custom font classes */
 .font-serif {
   font-family: var(--font-serif), serif;
 }
@@ -77,12 +76,10 @@
   font-family: var(--font-sans), sans-serif;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -98,7 +95,7 @@ html {
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* Line clamp utility */
+
 .line-clamp-4 {
   display: -webkit-box;
   -webkit-line-clamp: 4;

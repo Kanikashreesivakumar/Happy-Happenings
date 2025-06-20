@@ -63,7 +63,7 @@ export default function ServicesPage() {
       id: "birthdays",
       icon: Gift,
       title: "Birthday Celebrations",
-      description: "Make every emed parties and personalized touches.",
+      description: "Make every touches.",
       image: "/placeholder.svg?height=500&width=700&text=Fun+Birthday+Party",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Birthday+Decorations",
@@ -84,7 +84,7 @@ export default function ServicesPage() {
       id: "engagements",
       icon: Sparkles,
       title: "Engagement Parties",
-      description: "Celebrate your love story with romantic and elegant engagement celebrations.",
+      description: "Celebrate ement celebrations.",
       image: "/placeholder.svg?height=500&width=700&text=Romantic+Engagement+Party",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Engagement+Decorations",
@@ -105,7 +105,7 @@ export default function ServicesPage() {
       id: "corporate",
       icon: Users,
       title: "Corporate Events",
-      description: "Professional events that leave lasting impressions on clients and employees.",
+      description: "Professional on clients and employees.",
       image: "/placeholder.svg?height=500&width=700&text=Professional+Corporate+Event",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Corporate+Networking",
@@ -126,7 +126,7 @@ export default function ServicesPage() {
       id: "baby-showers",
       icon: Baby,
       title: "Baby Showers",
-      description: "Welcome new arrivals with beautiful and memorable baby shower celebrations.",
+      description: "Welcome  shower celebrations.",
       image: "/placeholder.svg?height=500&width=700&text=Cute+Baby+Shower",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Baby+Shower+Decorations",
@@ -147,7 +147,7 @@ export default function ServicesPage() {
       id: "anniversaries",
       icon: Calendar,
       title: "Anniversaries",
-      description: "Celebrate milestones and cherished memories with elegant anniversary parties.",
+      description: "Celebrate anniversary parties.",
       image: "/placeholder.svg?height=500&width=700&text=Elegant+Anniversary+Party",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Anniversary+Decorations",
@@ -170,17 +170,17 @@ export default function ServicesPage() {
     {
       icon: MapPin,
       title: "Venue Selection",
-      description: "Find the perfect location that matches your vision and budget",
+      description: "Find the pision and budget",
     },
     {
       icon: Palette,
       title: "Decor & Design",
-      description: "Custom decorations and styling to bring your theme to life",
+      description: "Custom life",
     },
     {
       icon: Utensils,
       title: "Catering Services",
-      description: "Delicious menus tailored to your preferences and dietary needs",
+      description: "Delicious  and dietary needs",
     },
     {
       icon: Camera,
@@ -190,7 +190,7 @@ export default function ServicesPage() {
     {
       icon: Music,
       title: "Entertainment",
-      description: "DJs, live music, and entertainment to keep guests engaged",
+      description: "DJs, live uests engaged",
     },
     {
       icon: Flower,
@@ -201,7 +201,7 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white pt-16">
-      {/* Hero Section */}
+ 
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
@@ -224,7 +224,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Event Types */}
+     
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -294,8 +294,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Additional Services */}
-      <section className="py-20 px-4 bg-gradient-to-r from-rose-50 to-pink-50">
+ <section className="py-20 px-4 bg-gradient-to-r from-rose-50 to-pink-50">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
@@ -334,7 +333,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 px-4">
         <motion.div
           className="max-w-4xl mx-auto text-center"

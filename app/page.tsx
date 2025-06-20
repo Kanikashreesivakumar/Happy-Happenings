@@ -191,9 +191,9 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
-      {/* Hero Section with Video Background */}
+      
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Video Background */}
+       
         <div className="absolute inset-0 z-0">
           <video
             autoPlay
@@ -204,7 +204,7 @@ export default function HomePage() {
             poster="/placeholder.svg?height=1080&width=1920&text=Wedding+Video+Poster"
           >
             <source src="/placeholder-video.mp4" type="video/mp4" />
-            {/* Fallback image if video doesn't load */}
+            
             <Image
               src="/placeholder.svg?height=1080&width=1920&text=Wedding+Background"
               alt="Wedding celebration"
@@ -216,7 +216,6 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-rose-100/80 to-pink-100/80" />
         </div>
 
-        {/* Play/Pause Button */}
         <button
           onClick={() => setIsVideoPlaying(!isVideoPlaying)}
           className="absolute top-6 right-6 z-20 bg-white/20 backdrop-blur-sm rounded-full p-3 hover:bg-white/30 transition-all duration-300"
@@ -266,7 +265,6 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* Event Types Grid - Photo-based Cards */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -330,7 +328,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Choose Us - Enhanced with Images */}
       <section className="py-20 px-4 bg-gradient-to-r from-rose-50 to-pink-50">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -382,7 +379,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Preview - Enhanced with More Images */}
+  
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -461,7 +458,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Gallery Preview - Enhanced with More Photos */}
       <section className="py-20 px-4 bg-gradient-to-r from-rose-50 to-pink-50">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -525,7 +521,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Client Testimonials - Enhanced with Event Photos */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -597,7 +592,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Booking CTA Banner */}
       <section className="py-20 px-4 bg-gradient-to-r from-rose-500 to-pink-500 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
