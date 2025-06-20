@@ -222,7 +222,6 @@ export default function PackagesPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -275,7 +274,6 @@ export default function PackagesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-rose-500 to-pink-500">
         <motion.div
           className="max-w-4xl mx-auto text-center"

@@ -38,7 +38,7 @@ export default function GalleryPage() {
   ]
 
   const galleryImages = [
-    // Weddings (12 images)
+   
     {
       id: 1,
       category: "weddings",
@@ -112,7 +112,7 @@ export default function GalleryPage() {
       alt: "Wedding guests celebration",
     },
 
-    // Birthdays (8 images)
+  
     {
       id: 13,
       category: "birthdays",
@@ -162,7 +162,6 @@ export default function GalleryPage() {
       alt: "Birthday party games",
     },
 
-    // Corporate (6 images)
     {
       id: 21,
       category: "corporate",
@@ -200,7 +199,6 @@ export default function GalleryPage() {
       alt: "Corporate team building",
     },
 
-    // Engagements (4 images)
     {
       id: 27,
       category: "engagements",
@@ -226,7 +224,6 @@ export default function GalleryPage() {
       alt: "Engagement celebration",
     },
 
-    // Baby Showers (3 images)
     {
       id: 31,
       category: "baby-showers",
@@ -246,7 +243,6 @@ export default function GalleryPage() {
       alt: "Baby shower games",
     },
 
-    // Anniversaries (3 images)
     {
       id: 34,
       category: "anniversaries",
@@ -272,7 +268,7 @@ export default function GalleryPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white pt-16">
-      {/* Hero Section */}
+
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
@@ -295,7 +291,6 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Filter Buttons */}
       <section className="py-8 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -322,7 +317,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Gallery Grid */}
+      
       <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -330,7 +325,7 @@ export default function GalleryPage() {
             variants={staggerContainer}
             initial="initial"
             animate="animate"
-            key={selectedFilter} // Re-trigger animation when filter changes
+            key={selectedFilter} 
           >
             {filteredImages.map((image, index) => (
               <motion.div
@@ -355,7 +350,6 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Lightbox */}
       {lightboxImage && (
         <div
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
@@ -381,7 +375,7 @@ export default function GalleryPage() {
         </div>
       )}
 
-      {/* CTA Section */}
+
       <section className="py-20 px-4 bg-gradient-to-r from-rose-500 to-pink-500">
         <motion.div
           className="max-w-4xl mx-auto text-center"

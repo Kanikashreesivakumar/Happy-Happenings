@@ -132,7 +132,7 @@ export default function TestimonialsPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white pt-16">
-      {/* Hero Section */}
+
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
@@ -155,7 +155,6 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      {/* Featured Testimonial Slider */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -207,7 +206,6 @@ export default function TestimonialsPage() {
               </div>
             </Card>
 
-            {/* Navigation Buttons */}
             <Button
               variant="outline"
               size="sm"
@@ -226,7 +224,6 @@ export default function TestimonialsPage() {
               <ChevronRight className="w-5 h-5" />
             </Button>
 
-            {/* Slide Indicators */}
             <div className="flex justify-center mt-6 gap-2">
               {testimonials.map((_, index) => (
                 <button
@@ -242,7 +239,6 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      {/* All Testimonials Grid */}
       <section className="py-20 px-4 bg-gradient-to-r from-rose-50 to-pink-50">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -298,7 +294,6 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -323,7 +318,7 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+     
       <section className="py-20 px-4 bg-gradient-to-r from-rose-500 to-pink-500">
         <motion.div
           className="max-w-4xl mx-auto text-center"
