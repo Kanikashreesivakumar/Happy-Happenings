@@ -42,7 +42,7 @@ export default function ServicesPage() {
       id: "weddings",
       icon: Heart,
       title: "Weddings",
-      description: "Your perfect day timate ceremonies to grand celebrations.",
+      description: "Your ",
       image: "/placeholder.svg?height=500&width=700&text=Elegant+Wedding+Ceremony",
       additionalImages: [
         "/placeholder.svg?height=300&width=400&text=Wedding+Reception",

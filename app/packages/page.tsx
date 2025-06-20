@@ -245,12 +245,12 @@ export default function PackagesPage() {
               {
                 question: "Can I customize a package?",
                 answer:
-                  "All our packages can be customized to fit your specific needs and budget. We'll work with you to create the perfect combination of services.",
+                  "All our services.",
               },
               {
                 question: "What's included in the consultation sessions?",
                 answer:
-                  "Our consultation sessions cover venue selection, theme development, vendor recommendations, timeline planning, and budget management. We'll guide you through every step of the planning process.",
+                  "Our process.",
               },
               {
                 question: "Do you offer payment plans?",
