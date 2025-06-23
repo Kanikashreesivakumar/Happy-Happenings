@@ -23,6 +23,7 @@ import {
   Play,
 } from "lucide-react"
 import { useEffect, useState } from "react"
+import { MotionImage } from "@/components/motion-image"
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -46,6 +47,18 @@ const staggerContainer = {
   animate: {
     transition: {
       staggerChildren: 0.15,
+    },
+  },
+}
+
+const imageVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
     },
   },
 }
@@ -293,7 +306,7 @@ export default function HomePage() {
                   className={`group hover:shadow-2xl transition-all duration-500 overflow-hidden border-0 shadow-lg ${event.hoverColor} cursor-pointer transform hover:scale-105`}
                 >
                   <div className="relative h-64 overflow-hidden">
-                    <Image
+                    <MotionImage
                       src={event.image || "/placeholder.svg"}
                       alt={event.title}
                       fill
@@ -484,7 +497,7 @@ export default function HomePage() {
                 variants={index % 2 === 0 ? fadeInLeft : fadeInRight}
                 className="relative aspect-square overflow-hidden rounded-lg group cursor-pointer"
               >
-                <Image
+                <MotionImage
                   src={image || "/placeholder.svg"}
                   alt={`Gallery image ${index + 1}`}
                   fill
@@ -544,7 +557,7 @@ export default function HomePage() {
             <Card className="border-0 shadow-2xl overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative h-64 lg:h-auto">
-                  <Image
+                  <MotionImage
                     src={testimonials[currentTestimonial].eventImage || "/placeholder.svg"}
                     alt={`${testimonials[currentTestimonial].event} photo`}
                     fill
