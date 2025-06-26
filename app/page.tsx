@@ -240,7 +240,7 @@ export default function HomePage() {
           </video>
         </div>
 
-
+        {/* Hero Card Frame - Vintage Photo Style */}
         <motion.div
           className="relative"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -249,13 +249,13 @@ export default function HomePage() {
           variants={floatAnimation}
           whileInView="animate"
         >
- 
+          {/* Vintage frame effects */}
           <div className="absolute -inset-4 bg-gradient-to-br from-stone-200 via-blue-100/50 to-rose-100/50 rounded-3xl shadow-2xl"></div>
           <div className="absolute -inset-2 bg-white/80 backdrop-blur-sm rounded-3xl shadow-inner"></div>
 
-      
+          {/* Photo container */}
           <div className="relative overflow-hidden rounded-3xl aspect-[4/3] min-h-[600px]">
-           
+            {/* Main photo */}
             <Image
               src="/placeholder.svg?height=800&width=600&text=Wedding+Photo"
               alt="Wedding celebration"
@@ -264,12 +264,13 @@ export default function HomePage() {
               priority
             />
 
-   
+            {/* Vintage overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-rose-100/20 to-pink-100/20 mix-blend-overlay"></div>
             
-            
+            {/* Inner frame border */}
             <div className="absolute inset-4 border-2 border-white/30 rounded-2xl pointer-events-none"></div>
-  
+            
+            {/* Optional: Photo caption */}
             <div className="absolute bottom-6 left-6 right-6 text-center">
               <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-stone-700 px-6 py-3 rounded-full text-sm font-medium shadow-sm border border-white/60">
                 Capturing Timeless Moments
@@ -277,6 +278,7 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* Decorative gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-rose-100/10 to-pink-100/10 pointer-events-none rounded-3xl"></div>
         </motion.div>
 
