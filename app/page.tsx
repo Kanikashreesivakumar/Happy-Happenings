@@ -24,6 +24,7 @@ import {
 } from "lucide-react"
 import { useEffect, useState } from "react"
 import { MotionImage } from "@/components/motion-image"
+import CathedralFrame from "@/components/cathedral-frame"
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -157,7 +158,7 @@ export default function HomePage() {
   ]
 
   const services = [
-    { icon: MapPin, title: "Venue Selection", image: "/placeholder.svg?height=300&width=400&text=Beautiful+Venue" },
+    { icon: MapPin, title: "Venue Selection", image: "/wall1.jpg?height=300&width=400&text=Beautiful+Venue" },
     { icon: Palette, title: "Decor & Design", image: "/placeholder.svg?height=300&width=400&text=Elegant+Decor" },
     { icon: Utensils, title: "Catering", image: "/placeholder.svg?height=300&width=400&text=Gourmet+Catering" },
     { icon: Camera, title: "Photography", image: "/placeholder.svg?height=300&width=400&text=Wedding+Photography" },
@@ -471,17 +472,11 @@ export default function HomePage() {
             {services.map((service, index) => (
               <motion.div key={service.title} variants={fadeInUp}>
                 <Card className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105">
-                  <div className="relative h-56">
-                    <Image
+                  <div className="relative h-[400px]">
+                    <CathedralFrame
                       src={service.image || "/placeholder.svg"}
                       alt={service.title}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                    <div className="absolute bottom-4 left-4">
-                      <service.icon className="w-8 h-8 text-white mb-2" />
-                    </div>
                   </div>
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
