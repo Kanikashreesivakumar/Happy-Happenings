@@ -63,6 +63,17 @@ const imageVariants = {
   },
 }
 
+const floatAnimation = {
+  animate: {
+    y: [0, -10, 0],
+    transition: {
+      duration: 4,
+      repeat: Infinity,
+      ease: "easeInOut", 
+    },
+  },
+}
+
 export default function HomePage() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const [isVideoPlaying, setIsVideoPlaying] = useState(true)
@@ -218,6 +229,7 @@ export default function HomePage() {
           >
             <source src="/placeholder-video.mp4" type="video/mp4" />
             
+            
             <Image
               src="/placeholder.svg?height=1080&width=1920&text=Wedding+Background"
               alt="Wedding celebration"
@@ -226,8 +238,47 @@ export default function HomePage() {
               priority
             />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-rose-100/80 to-pink-100/80" />
         </div>
+
+
+        <motion.div
+          className="relative"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.4, delay: 0.2 }}
+          variants={floatAnimation}
+          whileInView="animate"
+        >
+ 
+          <div className="absolute -inset-4 bg-gradient-to-br from-stone-200 via-blue-100/50 to-rose-100/50 rounded-3xl shadow-2xl"></div>
+          <div className="absolute -inset-2 bg-white/80 backdrop-blur-sm rounded-3xl shadow-inner"></div>
+
+      
+          <div className="relative overflow-hidden rounded-3xl aspect-[4/3] min-h-[600px]">
+           
+            <Image
+              src="/placeholder.svg?height=800&width=600&text=Wedding+Photo"
+              alt="Wedding celebration"
+              fill
+              className="object-cover transition-transform duration-700 hover:scale-105"
+              priority
+            />
+
+   
+            <div className="absolute inset-0 bg-gradient-to-r from-rose-100/20 to-pink-100/20 mix-blend-overlay"></div>
+            
+            
+            <div className="absolute inset-4 border-2 border-white/30 rounded-2xl pointer-events-none"></div>
+  
+            <div className="absolute bottom-6 left-6 right-6 text-center">
+              <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-stone-700 px-6 py-3 rounded-full text-sm font-medium shadow-sm border border-white/60">
+                Capturing Timeless Moments
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute inset-0 bg-gradient-to-r from-rose-100/10 to-pink-100/10 pointer-events-none rounded-3xl"></div>
+        </motion.div>
 
         <button
           onClick={() => setIsVideoPlaying(!isVideoPlaying)}
