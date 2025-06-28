@@ -52,7 +52,7 @@ export default function BookNowPage() {
     email: "",
     phone: "",
 
-    // Event Details
+ 
     eventType: "",
     eventDate: "",
     eventTime: "",
@@ -60,16 +60,14 @@ export default function BookNowPage() {
     venue: "",
     budget: "",
 
-    // Location & Preferences
     location: "",
     preferredStyle: "",
     specialRequests: "",
 
-    // Services
     selectedServices: [] as string[],
     selectedPackage: "",
 
-    // Additional Information
+   
     hearAboutUs: "",
     previousEvents: "",
     additionalNotes: "",
@@ -98,9 +96,9 @@ export default function BookNowPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
+
     console.log("Booking submitted:", formData)
-    // You would typically send this to your backend
+
   }
 
   const eventTypes = [
@@ -155,7 +153,7 @@ export default function BookNowPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white pt-16">
-      {/* Hero Section */}
+     
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
@@ -184,7 +182,6 @@ export default function BookNowPage() {
             you within 24 hours with a personalized proposal.
           </motion.p>
 
-          {/* Quick Stats */}
           <motion.div
             className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
@@ -211,7 +208,7 @@ export default function BookNowPage() {
         </div>
       </section>
 
-      {/* Progress Steps */}
+      
       <section className="py-8 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -248,7 +245,6 @@ export default function BookNowPage() {
         </div>
       </section>
 
-      {/* Booking Form */}
       <section className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -261,7 +257,7 @@ export default function BookNowPage() {
               </CardHeader>
               <CardContent className="p-8">
                 <form onSubmit={handleSubmit}>
-                  {/* Step 1: Personal Information */}
+         
                   {currentStep === 1 && (
                     <motion.div className="space-y-6" variants={staggerContainer} initial="initial" animate="animate">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -331,7 +327,7 @@ export default function BookNowPage() {
                     </motion.div>
                   )}
 
-                  {/* Step 2: Event Details */}
+               
                   {currentStep === 2 && (
                     <motion.div className="space-y-6" variants={staggerContainer} initial="initial" animate="animate">
                       <motion.div variants={fadeInUp} className="space-y-4">
@@ -446,7 +442,7 @@ export default function BookNowPage() {
                     </motion.div>
                   )}
 
-                  {/* Step 3: Services & Package */}
+                 
                   {currentStep === 3 && (
                     <motion.div className="space-y-8" variants={staggerContainer} initial="initial" animate="animate">
                       <motion.div variants={fadeInUp} className="space-y-4">
@@ -525,7 +521,6 @@ export default function BookNowPage() {
                     </motion.div>
                   )}
 
-                  {/* Step 4: Review & Submit */}
                   {currentStep === 4 && (
                     <motion.div className="space-y-6" variants={staggerContainer} initial="initial" animate="animate">
                       <motion.div variants={fadeInUp}>
@@ -608,7 +603,7 @@ export default function BookNowPage() {
                     </motion.div>
                   )}
 
-                  {/* Navigation Buttons */}
+          
                   <div className="flex justify-between mt-8 pt-6 border-t">
                     {currentStep > 1 && (
                       <Button
@@ -640,7 +635,6 @@ export default function BookNowPage() {
         </div>
       </section>
 
-      {/* Contact Information */}
       <section className="py-20 px-4 bg-gradient-to-r from-rose-50 to-pink-50">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -697,7 +691,7 @@ export default function BookNowPage() {
         </div>
       </section>
 
-      {/* Testimonial */}
+      
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div

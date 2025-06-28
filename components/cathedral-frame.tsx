@@ -18,7 +18,7 @@ export default function CathedralFrame({
 }: CathedralFrameProps) {
   return (
     <div className={`relative ${height} w-full`}>
-      {/* SVG mask for cathedral arch shape */}
+   
       <svg className="absolute w-0 h-0">
         <defs>
           <clipPath id="cathedral-arch" clipPathUnits="objectBoundingBox">
@@ -27,7 +27,7 @@ export default function CathedralFrame({
         </defs>
       </svg>
 
-      {/* Image container */}
+   
       <div 
         className="relative w-full h-full"
         style={{ clipPath: "url(#cathedral-arch)" }}

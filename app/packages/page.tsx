@@ -184,8 +184,6 @@ export default function PackagesPage() {
           </motion.div>
         </div>
       </section>
-
-      {/* Add-ons Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-rose-50 to-pink-50">
         <div className="max-w-6xl mx-auto">
           <motion.div
