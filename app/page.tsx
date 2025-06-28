@@ -255,32 +255,27 @@ export default function HomePage() {
           <div className="absolute -inset-2 bg-white/80 backdrop-blur-sm rounded-3xl shadow-inner"></div>
 
           {/* Photo container */}
-          <div className="relative overflow-hidden rounded-3xl aspect-[4/3] min-h-[600px]">
-            {/* Main photo */}
-            <Image
+          <div className="relative overflow-hidden aspect-[4/3] min-h-[600px]">
+            <CathedralFrame
               src="/placeholder.svg?height=800&width=600&text=Wedding+Photo"
               alt="Wedding celebration"
-              fill
-              className="object-cover transition-transform duration-700 hover:scale-105"
               priority
+              height="min-h-[600px]"
             />
-
-            {/* Vintage overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-rose-100/20 to-pink-100/20 mix-blend-overlay"></div>
-            
-            {/* Inner frame border */}
-            <div className="absolute inset-4 border-2 border-white/30 rounded-2xl pointer-events-none"></div>
-            
-            {/* Optional: Photo caption */}
-            <div className="absolute bottom-6 left-6 right-6 text-center">
-              <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-stone-700 px-6 py-3 rounded-full text-sm font-medium shadow-sm border border-white/60">
-                Capturing Timeless Moments
-              </div>
-            </div>
           </div>
 
-          {/* Decorative gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-rose-100/10 to-pink-100/10 pointer-events-none rounded-3xl"></div>
+          {/* Vintage overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-rose-100/20 to-pink-100/20 mix-blend-overlay"></div>
+          
+          {/* Inner frame border */}
+          <div className="absolute inset-4 border-2 border-white/30 rounded-2xl pointer-events-none"></div>
+          
+          {/* Optional: Photo caption */}
+          <div className="absolute bottom-6 left-6 right-6 text-center">
+            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-stone-700 px-6 py-3 rounded-full text-sm font-medium shadow-sm border border-white/60">
+              Capturing Timeless Moments
+            </div>
+          </div>
         </motion.div>
 
         <button
@@ -356,15 +351,12 @@ export default function HomePage() {
           >
             {eventTypes.map((event, index) => (
               <motion.div key={event.title} variants={fadeInUp}>
-                <Card
-                  className={`group hover:shadow-2xl transition-all duration-500 overflow-hidden border-0 shadow-lg ${event.hoverColor} cursor-pointer transform hover:scale-105`}
-                >
-                  <div className="relative h-64 overflow-hidden">
-                    <MotionImage
+                <Card className={`group hover:shadow-2xl transition-all duration-500 overflow-hidden border-0 shadow-lg ${event.hoverColor} cursor-pointer transform hover:scale-105`}>
+                  <div className="relative h-64">
+                    <CathedralFrame
                       src={event.image || "/placeholder.svg"}
                       alt={event.title}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      height="h-64"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                     <div className="absolute bottom-4 left-4 right-4">
@@ -420,12 +412,11 @@ export default function HomePage() {
             {features.map((feature, index) => (
               <motion.div key={feature.title} variants={index % 2 === 0 ? fadeInLeft : fadeInRight}>
                 <Card className="text-center h-full border-0 shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden group">
-                  <div className="relative h-48 overflow-hidden">
-                    <Image
+                  <div className="relative h-48">
+                    <CathedralFrame
                       src={feature.image || "/placeholder.svg"}
                       alt={feature.title}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      height="h-48"
                     />
                     <div className="absolute inset-0 bg-rose-500/20 group-hover:bg-rose-500/10 transition-colors duration-300" />
                   </div>
@@ -543,13 +534,12 @@ export default function HomePage() {
               <motion.div
                 key={index}
                 variants={index % 2 === 0 ? fadeInLeft : fadeInRight}
-                className="relative aspect-square overflow-hidden rounded-lg group cursor-pointer"
+                className="relative aspect-square"
               >
-                <MotionImage
+                <CathedralFrame
                   src={image || "/placeholder.svg"}
                   alt={`Gallery image ${index + 1}`}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  height="h-full"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -605,11 +595,10 @@ export default function HomePage() {
             <Card className="border-0 shadow-2xl overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative h-64 lg:h-auto">
-                  <MotionImage
+                  <CathedralFrame
                     src={testimonials[currentTestimonial].eventImage || "/placeholder.svg"}
                     alt={`${testimonials[currentTestimonial].event} photo`}
-                    fill
-                    className="object-cover"
+                    height="h-full"
                   />
                 </div>
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
