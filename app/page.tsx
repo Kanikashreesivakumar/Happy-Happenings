@@ -255,17 +255,18 @@ export default function HomePage() {
           <div className="absolute -inset-2 bg-white/80 backdrop-blur-sm rounded-3xl shadow-inner"></div>
 
           {/* Photo container */}
-          <div className="relative overflow-hidden aspect-[4/3] min-h-[600px]">
-            <CathedralFrame
-              src="/placeholder.svg?height=800&width=600&text=Wedding+Photo"
+          <div className="relative overflow-hidden aspect-[4/3] min-h-[600px] rounded-3xl">
+            <Image 
+              src="/your-photo.jpg" 
               alt="Wedding celebration"
+              fill
               priority
-              height="min-h-[600px]"
+              className="object-cover transition-transform duration-700 hover:scale-105"
             />
           </div>
 
           {/* Vintage overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-rose-100/20 to-pink-100/20 mix-blend-overlay"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-rose-100/20 to-pink-100/20 mix-blend-overlay rounded-3xl"></div>
           
           {/* Inner frame border */}
           <div className="absolute inset-4 border-2 border-white/30 rounded-2xl pointer-events-none"></div>

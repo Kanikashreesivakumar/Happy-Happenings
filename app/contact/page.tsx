@@ -286,15 +286,7 @@ Message: ${formData.message}`
 
       
 
-          <motion.div
-            className="bg-gray-200 h-96 rounded-lg flex items-center justify-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-gray-600 text-lg">Interactive Map Would Be Embedded Here</p>
-          </motion.div>
+         
       
     </div>
   )
