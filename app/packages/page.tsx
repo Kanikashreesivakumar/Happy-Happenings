@@ -272,37 +272,7 @@ export default function PackagesPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-r from-rose-500 to-pink-500">
-        <motion.div
-          className="max-w-4xl mx-auto text-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Ready to Get Started?</h2>
-          <p className="text-xl text-rose-100 mb-8 max-w-2xl mx-auto">
-            Contact us today for a free consultation and let's discuss which package is perfect for your special event.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-white text-rose-600 hover:bg-rose-50 px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-              asChild
-            >
-              <Link href="/contact">Get Free Consultation</Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-rose-600 px-8 py-4 rounded-full text-lg font-medium"
-              asChild
-            >
-              <Link href="/gallery">View Our Work</Link>
-            </Button>
-          </div>
-        </motion.div>
-      </section>
+      
     </div>
   )
 }

@@ -54,6 +54,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/cultora" className="text-gray-300 hover:text-rose-500 transition-colors">
+                  Cultora
+                </Link>
+              </li>
+              <li>
                 <Link href="/packages" className="text-gray-300 hover:text-rose-500 transition-colors">
                   Packages
                 </Link>

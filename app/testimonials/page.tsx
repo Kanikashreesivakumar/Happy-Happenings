@@ -319,27 +319,6 @@ export default function TestimonialsPage() {
       </section>
 
      
-      <section className="py-20 px-4 bg-gradient-to-r from-rose-500 to-pink-500">
-        <motion.div
-          className="max-w-4xl mx-auto text-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Ready to Join Our Happy Clients?</h2>
-          <p className="text-xl text-rose-100 mb-8 max-w-2xl mx-auto">
-            Let us create an unforgettable experience for your special event. Contact us today for a free consultation.
-          </p>
-          <Button
-            size="lg"
-            className="bg-white text-rose-600 hover:bg-rose-50 px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-            asChild
-          >
-            <Link href="/contact">Start Planning Today</Link>
-          </Button>
-        </motion.div>
-      </section>
     </div>
   )
 }

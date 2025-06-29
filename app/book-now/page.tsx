@@ -692,42 +692,7 @@ export default function BookNowPage() {
       </section>
 
       
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <Card className="border-0 shadow-lg p-8">
-              <div className="flex justify-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <blockquote className="text-lg text-gray-700 mb-6 italic leading-relaxed">
-                "The booking process was so easy and comprehensive. The team understood exactly what we wanted and
-                delivered beyond our expectations. Our wedding was absolutely perfect!"
-              </blockquote>
-              <div className="flex items-center justify-center gap-4">
-                <Image
-                  src="/placeholder.svg?height=60&width=60&text=Client"
-                  alt="Happy Client"
-                  width={60}
-                  height={60}
-                  className="rounded-full"
-                />
-                <div className="text-left">
-                  <p className="font-semibold text-gray-800">Sarah & Michael</p>
-                  <p className="text-gray-600">Wedding Clients</p>
-                </div>
-              </div>
-            </Card>
-          </motion.div>
-        </div>
-      </section>
+      
     </div>
   )
 }
