@@ -107,7 +107,7 @@ export default function HomePage() {
     {
       icon: Users,
       title: "Corporate Events",
-      image: "/placeholder.svg?height=400&width=600&text=Corporate+Gala",
+      image: "/coo.jpg?height=400&width=600&text=Corporate+Gala",
       description: "Professional that leave lasting impressions",
       color: "bg-blue-100",
       hoverColor: "hover:bg-blue-200",
@@ -115,7 +115,7 @@ export default function HomePage() {
     {
       icon: Baby,
       title: "Baby Showers",
-      image: "/placeholder.svg?height=400&width=600&text=Baby+Shower+Setup",
+      image: "/baby.jpg?height=400&width=600&text=Baby+Shower+Setup",
       description: "Sweet ivals",
       color: "bg-green-100",
       hoverColor: "hover:bg-green-200",
@@ -123,7 +123,7 @@ export default function HomePage() {
     {
       icon: Calendar,
       title: "Anniversaries",
-      image: "/placeholder.svg?height=400&width=600&text=Anniversary+Celebration",
+      image: "/pro.jpg?height=400&width=600&text=Anniversary+Celebration",
       description: "Miley",
       color: "bg-yellow-100",
       hoverColor: "hover:bg-yellow-200",
