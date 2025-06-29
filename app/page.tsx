@@ -242,44 +242,9 @@ export default function HomePage() {
           </video>
         </div>
 
-        {/* Hero Card Frame - Vintage Photo Style */}
-        <motion.div
-          className="relative"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.4, delay: 0.2 }}
-          variants={floatAnimation}
-          whileInView="animate"
-        >
-          {/* Vintage frame effects */}
-          <div className="absolute -inset-4 bg-gradient-to-br from-stone-200 via-blue-100/50 to-rose-100/50 rounded-3xl shadow-2xl"></div>
-          <div className="absolute -inset-2 bg-white/80 backdrop-blur-sm rounded-3xl shadow-inner"></div>
+       
 
-          {/* Photo container */}
-          <div className="relative overflow-hidden aspect-[4/3] min-h-[600px] rounded-3xl">
-            <Image 
-              src="/pho.jpg" 
-              alt="Wedding celebration"
-              fill
-              priority
-              className="object-cover transition-transform duration-700 hover:scale-105"
-            />
-          </div>
-
-          {/* Vintage overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-rose-100/20 to-pink-100/20 mix-blend-overlay rounded-3xl"></div>
-          
-          {/* Inner frame border */}
-          <div className="absolute inset-4 border-2 border-white/30 rounded-2xl pointer-events-none"></div>
-          
-          {/* Optional: Photo caption */}
-          <div className="absolute bottom-6 left-6 right-6 text-center">
-            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm text-stone-700 px-6 py-3 rounded-full text-sm font-medium shadow-sm border border-white/60">
-              Capturing Timeless Moments
-            </div>
-          </div>
-        </motion.div>
-
+       
         <button
           onClick={() => setIsVideoPlaying(!isVideoPlaying)}
           className="absolute top-6 right-6 z-20 bg-white/20 backdrop-blur-sm rounded-full p-3 hover:bg-white/30 transition-all duration-300"
@@ -574,75 +539,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">What Our Clients Say</h2>
-            <p className="text-xl text-gray-600">Real stories from real celebrations</p>
-          </motion.div>
 
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <Card className="border-0 shadow-2xl overflow-hidden">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="relative h-64 lg:h-auto">
-                  <CathedralFrame
-                    src={testimonials[currentTestimonial].eventImage || "/placeholder.svg"}
-                    alt={`${testimonials[currentTestimonial].event} photo`}
-                    height="h-full"
-                  />
-                </div>
-                <div className="p-8 lg:p-12 flex flex-col justify-center">
-                  <div className="flex justify-center lg:justify-start mb-4">
-                    {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <blockquote className="text-xl text-gray-700 mb-6 leading-relaxed italic">
-                    "{testimonials[currentTestimonial].review}"
-                  </blockquote>
-                  <div className="flex items-center gap-4">
-                    <Image
-                      src={testimonials[currentTestimonial].image || "/placeholder.svg"}
-                      alt={testimonials[currentTestimonial].name}
-                      width={60}
-                      height={60}
-                      className="rounded-full"
-                    />
-                    <div className="text-left">
-                      <p className="font-semibold text-gray-800">{testimonials[currentTestimonial].name}</p>
-                      <p className="text-gray-600">{testimonials[currentTestimonial].event}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            <div className="flex justify-center mt-6 gap-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentTestimonial(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentTestimonial ? "bg-rose-500 scale-125" : "bg-gray-300 hover:bg-gray-400"
-                  }`}
-                />
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+            
 
       <section className="py-20 px-4 bg-gradient-to-r from-rose-500 to-pink-500 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
