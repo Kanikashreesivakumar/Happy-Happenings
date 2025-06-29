@@ -51,21 +51,21 @@ export default function AboutPage() {
     {
       name: "Christian Celebrations",
       description: "Sacred ceremonies and joyful celebrations honoring Christian traditions",
-      image: "/placeholder.svg?height=400&width=600&text=Christian+Wedding+Ceremony",
+      image: "/c1.jpg?height=400&width=600&text=Christian+Wedding+Ceremony",
       rituals: [
         {
           name: "Wedding Ceremonies",
-          image: "/placeholder.svg?height=300&width=400&text=Christian+Wedding",
+          image: "/c2.jpg?height=300&width=400&text=Christian+Wedding",
           description: "Sacred union ceremonies in beautiful church settings",
         },
         {
           name: "Baptism Celebrations",
-          image: "/placeholder.svg?height=300&width=400&text=Baptism+Ceremony",
+          image: "/c3.jpg?height=300&width=400&text=Baptism+Ceremony",
           description: "Meaningful baptism ceremonies with family gatherings",
         },
         {
           name: "Confirmation Events",
-          image: "/placeholder.svg?height=300&width=400&text=Confirmation+Ceremony",
+          image: "/c4.jpg?height=300&width=400&text=Confirmation+Ceremony",
           description: "Special confirmation celebrations and receptions",
         },
       ],
@@ -76,21 +76,21 @@ export default function AboutPage() {
     {
       name: "Islamic Traditions",
       description: "Elegant celebrations respecting Islamic customs and traditions",
-      image: "/placeholder.svg?height=400&width=600&text=Islamic+Wedding+Nikah",
+      image: "/m1.jpg?height=400&width=600&text=Islamic+Wedding+Nikah",
       rituals: [
         {
           name: "Nikah Ceremonies",
-          image: "/placeholder.svg?height=300&width=400&text=Nikah+Ceremony",
+          image: "/m2.jpg?height=300&width=400&text=Nikah+Ceremony",
           description: "Beautiful Islamic wedding ceremonies with traditional elements",
         },
         {
           name: "Eid Celebrations",
-          image: "/placeholder.svg?height=300&width=400&text=Eid+Celebration",
+          image: "/m3.jpg?height=300&width=400&text=Eid+Celebration",
           description: "Joyful Eid festivities with family and community",
         },
         {
           name: "Aqiqah Events",
-          image: "/placeholder.svg?height=300&width=400&text=Aqiqah+Ceremony",
+          image: "/m4.jpg?height=300&width=400&text=Aqiqah+Ceremony",
           description: "Traditional naming ceremonies for newborns",
         },
       ],
@@ -101,21 +101,21 @@ export default function AboutPage() {
     {
       name: "Hindu Festivities",
       description: "Vibrant celebrations honoring Hindu customs and sacred rituals",
-      image: "/placeholder.svg?height=400&width=600&text=Hindu+Wedding+Mandap",
+      image: "/h2.jpg?height=400&width=600&text=Hindu+Wedding+Mandap",
       rituals: [
         {
           name: "Wedding Ceremonies",
-          image: "/placeholder.svg?height=300&width=400&text=Hindu+Wedding",
+          image: "/h3.jpg?height=300&width=400&text=Hindu+Wedding",
           description: "Traditional Hindu weddings with sacred fire ceremonies",
         },
         {
           name: "Diwali Celebrations",
-          image: "/placeholder.svg?height=300&width=400&text=Diwali+Festival",
+          image: "/h4.jpg?height=300&width=400&text=Diwali+Festival",
           description: "Festival of lights celebrations with traditional decorations",
         },
         {
           name: "Puja Ceremonies",
-          image: "/placeholder.svg?height=300&width=400&text=Puja+Ceremony",
+          image: "/h5.jpg?height=300&width=400&text=Puja+Ceremony",
           description: "Sacred worship ceremonies and spiritual gatherings",
         },
       ],
