@@ -36,13 +36,13 @@ export default function Navbar() {
   ]
 
   const galleryItems = [
-    { title: "Wedding Gallery", href: "/gallery?filter=weddings", image: "/placeholder.svg?height=100&width=150" },
-    { title: "Birthday Gallery", href: "/gallery?filter=birthdays", image: "/placeholder.svg?height=100&width=150" },
-    { title: "Corporate Gallery", href: "/gallery?filter=corporate", image: "/placeholder.svg?height=100&width=150" },
+    { title: "Wedding Gallery", href: "/gallery?filter=weddings", image: "/wedd.jpg?height=100&width=150" },
+    { title: "Birthday Gallery", href: "/gallery?filter=birthdays", image: "/baby.jpg?height=100&width=150" },
+    { title: "Corporate Gallery", href: "/gallery?filter=corporate", image: "/coo.jpg?height=100&width=150" },
     {
       title: "Engagement Gallery",
       href: "/gallery?filter=engagements",
-      image: "/placeholder.svg?height=100&width=150",
+      image: "/s1.jpg?height=100&width=150",
     },
   ]
 

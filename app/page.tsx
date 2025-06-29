@@ -167,15 +167,15 @@ export default function HomePage() {
   ]
 
   const galleryImages = [
-    "/placeholder.svg?height=400&width=400&text=Wedding+Ceremony",
-    "/placeholder.svg?height=400&width=400&text=Birthday+Party",
-    "/placeholder.svg?height=400&width=400&text=Corporate+Event",
-    "/placeholder.svg?height=400&width=400&text=Engagement+Party",
-    "/placeholder.svg?height=400&width=400&text=Baby+Shower",
-    "/placeholder.svg?height=400&width=400&text=Anniversary+Dinner",
-    "/placeholder.svg?height=400&width=400&text=Wedding+Reception",
-    "/placeholder.svg?height=400&width=400&text=Birthday+Cake",
-    "/placeholder.svg?height=400&width=400&text=Corporate+Gala",
+    "/s1.jpg?height=400&width=400&text=Wedding+Ceremony",
+    "/s2.jpg?height=400&width=400&text=Birthday+Party",
+    "/s3.jpg?height=400&width=400&text=Corporate+Event",
+    "/s4.jpg?height=400&width=400&text=Engagement+Party",
+    "/s5.jpg?height=400&width=400&text=Baby+Shower",
+    "/s6.jpg?height=400&width=400&text=Anniversary+Dinner",
+    "/s7.jpg?height=400&width=400&text=Wedding+Reception",
+    "/s8.jpg?height=400&width=400&text=Birthday+Cake",
+    "/s10.jpg?height=400&width=400&text=Corporate+Gala",
   ]
 
   const testimonials = [
@@ -542,35 +542,7 @@ export default function HomePage() {
 
             
 
-      <section className="py-20 px-4 bg-gradient-to-r from-rose-500 to-pink-500 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="/placeholder.svg?height=400&width=1200&text=CTA+Background"
-            alt="CTA Background"
-            fill
-            className="object-cover"
-          />
-        </div>
-        <motion.div
-          className="max-w-4xl mx-auto text-center relative z-10"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Let's Make Your Dream Event Real</h2>
-          <p className="text-xl text-rose-100 mb-8 max-w-2xl mx-auto">
-            Ready to start planning? Get in touch with us today and let's create something magical together.
-          </p>
-          <Button
-            size="lg"
-            className="bg-white text-rose-600 hover:bg-rose-50 px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            asChild
-          >
-            <Link href="/contact">Book Now</Link>
-          </Button>
-        </motion.div>
-      </section>
+     
     </div>
   )
 }
