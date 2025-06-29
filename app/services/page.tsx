@@ -78,7 +78,7 @@ export default function ServicesPage() {
         "Party Favors",
         "Photography",
       ],
-      color: "bg-pink-100",
+      color: "bg-rose-100",
     },
     {
       id: "engagements",
@@ -99,7 +99,7 @@ export default function ServicesPage() {
         "Memory Keepsakes",
         "Photography",
       ],
-      color: "bg-purple-100",
+      color: "bg-rose-100",
     },
     {
       id: "corporate",
@@ -120,7 +120,7 @@ export default function ServicesPage() {
         "Networking Events",
         "Brand Integration",
       ],
-      color: "bg-blue-100",
+      color: "bg-rose-100",
     },
     {
       id: "baby-showers",
@@ -141,7 +141,7 @@ export default function ServicesPage() {
         "Catering",
         "Photography",
       ],
-      color: "bg-green-100",
+      color: "bg-rose-100",
     },
     {
       id: "anniversaries",
@@ -162,7 +162,7 @@ export default function ServicesPage() {
         "Entertainment",
         "Photography",
       ],
-      color: "bg-yellow-100",
+      color: "bg-rose-100",
     },
   ]
 
@@ -333,33 +333,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4">
-        <motion.div
-          className="max-w-4xl mx-auto text-center"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-6">Ready to Start Planning?</h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Let's discuss your vision and create an unforgettable event that exceeds your expectations.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 rounded-full" asChild>
-              <Link href="/contact">Get Started</Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-rose-300 text-rose-600 hover:bg-rose-50 px-8 py-4 rounded-full"
-              asChild
-            >
-              <Link href="/packages">View Packages</Link>
-            </Button>
-          </div>
-        </motion.div>
-      </section>
+     
     </div>
   )
 }

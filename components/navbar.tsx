@@ -59,7 +59,7 @@ export default function Navbar() {
     <nav
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent",
+        isScrolled ? "bg-gradient-to-r from-rose-50 to-pink-50 backdrop-blur-md shadow-lg" : "bg-transparent",
       )}
     >
       <div className="max-w-7xl mx-auto px-4">
@@ -136,6 +136,8 @@ export default function Navbar() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
+               
+
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
                     className={cn(
@@ -185,6 +187,22 @@ export default function Navbar() {
                       ))}
                     </ul>
                   </NavigationMenuContent>
+                </NavigationMenuItem>
+          
+                <NavigationMenuItem>
+                  <CustomNavLink
+                    href="/cultora"
+                    className={cn(
+                      "relative text-sm font-medium px-4 py-2 rounded-lg transition-all duration-300 group",
+                      "before:absolute before:inset-0 before:rounded-lg before:transition-all before:duration-300",
+                      "before:scale-0 before:opacity-0 hover:before:scale-100 hover:before:opacity-100",
+                      isScrolled
+                        ? "text-gray-700 hover:text-rose-600 before:bg-rose-50 hover:shadow-sm"
+                        : "text-black hover:text-rose-200 before:bg-white/10 hover:shadow-lg",
+                    )}
+                  >
+                    <span className="relative z-10">Cultora</span>
+                  </CustomNavLink>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
@@ -240,7 +258,7 @@ export default function Navbar() {
 
             <Button
               size="sm"
-              className="relative ml-4 bg-rose-500 hover:bg-rose-600 text-black rounded-full px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5 group overflow-hidden"
+              className="relative ml-4 bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white rounded-full px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5 group overflow-hidden"
               asChild
             >
               <Link href="/book-now">
@@ -262,7 +280,9 @@ export default function Navbar() {
                     "relative p-2 rounded-lg transition-all duration-300",
                     "before:absolute before:inset-0 before:rounded-lg before:transition-all before:duration-300",
                     "before:scale-0 before:opacity-0 hover:before:scale-100 hover:before:opacity-100",
-                    isScrolled ? "hover:bg-rose-50 before:bg-rose-50" : "hover:bg-white/10 before:bg-white/10",
+                    isScrolled 
+                      ? "hover:bg-gradient-to-r hover:from-rose-50 hover:to-pink-50 before:bg-gradient-to-r before:from-rose-50 before:to-pink-50" 
+                      : "hover:bg-white/10 before:bg-white/10",
                   )}
                 >
                   <Menu
@@ -273,7 +293,7 @@ export default function Navbar() {
                   />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white">
+              <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-gradient-to-r from-rose-50 to-pink-50">
                 <div className="flex flex-col gap-2 mt-8">
                   <Link
                     href="/"
@@ -288,6 +308,14 @@ export default function Navbar() {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Services
+                  </Link>
+                  {/* Add Culture link in mobile menu */}
+                  <Link
+                    href="/culture"
+                    className="text-lg font-medium text-gray-700 hover:text-rose-600 transition-all duration-300 p-3 rounded-lg hover:bg-rose-50 hover:shadow-sm hover:scale-[1.02]"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Culture
                   </Link>
                   <Link
                     href="/gallery"
@@ -318,7 +346,7 @@ export default function Navbar() {
                     Contact
                   </Link>
                   <Button
-                    className="bg-rose-500 hover:bg-rose-600 text-white rounded-full mt-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5 group overflow-hidden"
+                    className="bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white rounded-full mt-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5 group overflow-hidden"
                     asChild
                   >
                     <Link href="/book-now" onClick={() => setIsMobileMenuOpen(false)}>

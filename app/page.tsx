@@ -158,10 +158,10 @@ export default function HomePage() {
   ]
 
   const services = [
-    { icon: MapPin, title: "Venue Selection", image: "/wall1.jpg?height=300&width=400&text=Beautiful+Venue" },
-    { icon: Palette, title: "Decor & Design", image: "/placeholder.svg?height=300&width=400&text=Elegant+Decor" },
+    { icon: MapPin, title: "Venue Selection", image: "/st.jpg?height=300&width=400&text=Beautiful+Venue" },
+    { icon: Palette, title: "Decor & Design", image: "/stg.jpg?height=300&width=400&text=Elegant+Decor" },
     { icon: Utensils, title: "Catering", image: "/placeholder.svg?height=300&width=400&text=Gourmet+Catering" },
-    { icon: Camera, title: "Photography", image: "/placeholder.svg?height=300&width=400&text=Wedding+Photography" },
+    { icon: Camera, title: "Make up", image: "/mp.jpg?height=300&width=400&text=Wedding+Photography" },
     { icon: Music, title: "Entertainment", image: "/placeholder.svg?height=300&width=400&text=Live+Entertainment" },
   ]
 
@@ -225,10 +225,10 @@ export default function HomePage() {
             muted
             loop
             playsInline
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-95"
             poster="/placeholder.svg?height=1080&width=1920&text=Wedding+Video+Poster"
           >
-            <source src="/placeholder-video.mp4" type="video/mp4" />
+            <source src="/vid.mp4" type="video/mp4" />
             
             
             <Image
@@ -257,7 +257,7 @@ export default function HomePage() {
           {/* Photo container */}
           <div className="relative overflow-hidden aspect-[4/3] min-h-[600px] rounded-3xl">
             <Image 
-              src="/your-photo.jpg" 
+              src="/pho.jpg" 
               alt="Wedding celebration"
               fill
               priority
@@ -352,7 +352,7 @@ export default function HomePage() {
           >
             {eventTypes.map((event, index) => (
               <motion.div key={event.title} variants={fadeInUp}>
-                <Card className={`group hover:shadow-2xl transition-all duration-500 overflow-hidden border-0 shadow-lg ${event.hoverColor} cursor-pointer transform hover:scale-105`}>
+                <Card className="group hover:shadow-2xl transition-all duration-500 overflow-hidden border-0 shadow-lg hover:bg-rose-50 cursor-pointer transform hover:scale-105">
                   <div className="relative h-64">
                     <CathedralFrame
                       src={event.image || "/placeholder.svg"}
@@ -362,8 +362,8 @@ export default function HomePage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                     <div className="absolute bottom-4 left-4 right-4">
                       <div className="flex items-center gap-3 mb-2">
-                        <div className={`w-10 h-10 ${event.color} rounded-full flex items-center justify-center`}>
-                          <event.icon className="w-5 h-5 text-gray-700" />
+                        <div className="w-10 h-10 bg-rose-100 rounded-full flex items-center justify-center">
+                          <event.icon className="w-5 h-5 text-rose-600" />
                         </div>
                         <h3 className="text-xl font-semibold text-white">{event.title}</h3>
                       </div>
