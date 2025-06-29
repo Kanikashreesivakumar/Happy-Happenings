@@ -83,7 +83,7 @@ export default function HomePage() {
     {
       icon: Heart,
       title: "Weddings",
-      image: "/placeholder.svg?height=400&width=600&text=Elegant+Wedding+Ceremony",
+      image: "/wedd.jpg?height=400&width=600&text=Elegant+Wedding+Ceremony",
       description: "Create planning services",
       color: "bg-rose-100",
       hoverColor: "hover:bg-rose-200",
@@ -91,7 +91,7 @@ export default function HomePage() {
     {
       icon: Gift,
       title: "Birthdays",
-      image: "/placeholder.svg?height=400&width=600&text=Birthday+Celebration",
+      image: "/br.jpg?height=400&width=600&text=Birthday+Celebration",
       description: "Memorable birthday to your unique style",
       color: "bg-pink-100",
       hoverColor: "hover:bg-pink-200",
@@ -99,7 +99,7 @@ export default function HomePage() {
     {
       icon: Sparkles,
       title: "Engagements",
-      image: "/placeholder.svg?height=400&width=600&text=Romantic+Engagement",
+      image: "/enga.jpg?height=400&width=600&text=Romantic+Engagement",
       description: "Romantic  celebrate your love story",
       color: "bg-purple-100",
       hoverColor: "hover:bg-purple-200",
@@ -158,11 +158,12 @@ export default function HomePage() {
   ]
 
   const services = [
-    { icon: MapPin, title: "Venue Selection", image: "/st.jpg?height=300&width=400&text=Beautiful+Venue" },
+    { icon: MapPin, title: "Photography", image: "/phot.jpg?height=300&width=400&text=Beautiful+Venue" },
     { icon: Palette, title: "Decor & Design", image: "/stg.jpg?height=300&width=400&text=Elegant+Decor" },
-    { icon: Utensils, title: "Catering", image: "/placeholder.svg?height=300&width=400&text=Gourmet+Catering" },
+    { icon: Utensils, title: "Catering", image: "/ct.jpg?height=300&width=400&text=Gourmet+Catering" },
     { icon: Camera, title: "Make up", image: "/mp.jpg?height=300&width=400&text=Wedding+Photography" },
-    { icon: Music, title: "Entertainment", image: "/placeholder.svg?height=300&width=400&text=Live+Entertainment" },
+    { icon: Music, title: "Music & DJ", image: "/mu.jpg?height=300&width=400&text=Live+Entertainment" },
+    { icon: Palette, title: "Mehendi", image: "/mh.jpg?height=300&width=400&text=Live+Entertainment" },
   ]
 
   const galleryImages = [
