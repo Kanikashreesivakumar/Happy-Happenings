@@ -110,7 +110,7 @@ export default function Navbar() {
                   >
                     <span className="relative z-10 flex items-center gap-1">
                       Services
-                      <ChevronDown className="w-3 h-3 transition-transform duration-300 group-data-[state=open]:rotate-180" />
+                      
                     </span>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="bg-white border border-gray-200 shadow-xl rounded-xl p-2 mt-2">
@@ -152,7 +152,7 @@ export default function Navbar() {
                   >
                     <span className="relative z-10 flex items-center gap-1">
                       Gallery
-                      <ChevronDown className="w-3 h-3 transition-transform duration-300 group-data-[state=open]:rotate-180" />
+                     
                     </span>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="bg-white border border-gray-200 shadow-xl rounded-xl p-2 mt-2">
