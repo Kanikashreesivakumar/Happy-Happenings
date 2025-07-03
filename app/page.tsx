@@ -124,7 +124,7 @@ export default function HomePage() {
       icon: Calendar,
       title: "Anniversaries",
       image: "/pro.jpg?height=400&width=600&text=Anniversary+Celebration",
-      description: "Miley",
+      description: "malar & sugan",
       color: "bg-yellow-100",
       hoverColor: "hover:bg-yellow-200",
     },
