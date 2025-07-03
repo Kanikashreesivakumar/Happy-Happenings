@@ -116,7 +116,7 @@ export default function HomePage() {
       icon: Baby,
       title: "Baby Showers",
       image: "/baby.jpg?height=400&width=600&text=Baby+Shower+Setup",
-      description: "Sweet ivals",
+      description: "Sanikasha",
       color: "bg-green-100",
       hoverColor: "hover:bg-green-200",
     },
@@ -141,7 +141,7 @@ export default function HomePage() {
     },
     {
       title: "Professionalism",
-      subtitle: "5-star rated team",
+      subtitle: "5-star ",
       description:
         "Our  and countless successful events to your special day.",
       icon: Star,
