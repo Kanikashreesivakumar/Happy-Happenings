@@ -135,7 +135,7 @@ export default function HomePage() {
       title: "Personalization",
       subtitle: "Tailored packages",
       description:
-        "Every om-designed packages that reflect your personal style and vision.",
+        "Every style and vision.",
       icon: Heart,
       image: "/placeholder.svg?height=300&width=400&text=Personalized+Planning",
     },
@@ -151,7 +151,7 @@ export default function HomePage() {
       title: "Perfection",
       subtitle: "Every detail matters",
       description:
-        "From the smallest decorative touch to the grandest gesture, we ensure every element is flawlessly executed.",
+        "From the smallest] is flawlessly executed.",
       icon: Sparkles,
       image: "/placeholder.svg?height=300&width=400&text=Perfect+Details",
     },
@@ -192,7 +192,7 @@ export default function HomePage() {
       name: "Jennifer Thompson",
       event: "Corporate Event",
       review:
-        "Outstanding service for our company anniversary. The event exceeded all expectations and our guests were amazed.",
+        "Outstanding service. The event exceeded all expectations and our guests were amazed.",
       image: "/placeholder.svg?height=80&width=80&text=Jennifer",
       eventImage: "/placeholder.svg?height=300&width=400&text=Corporate+Photo",
       rating: 5,
