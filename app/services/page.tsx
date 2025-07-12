@@ -170,7 +170,7 @@ export default function ServicesPage() {
     {
       icon: MapPin,
       title: "Venue Selection",
-      description: "Find the pision and budget",
+      description: "Find",
     },
     {
       icon: Palette,
@@ -185,7 +185,7 @@ export default function ServicesPage() {
     {
       icon: Camera,
       title: "Photography & Video",
-      description: "Professional documentation of your special moments",
+      description: "Professional documentation ",
     },
     {
       icon: Music,
@@ -195,7 +195,7 @@ export default function ServicesPage() {
     {
       icon: Flower,
       title: "Floral Arrangements",
-      description: "Beautiful floral designs for centerpieces and decorations",
+      description: "Beautiful floral",
     },
   ]
 
@@ -218,8 +218,7 @@ export default function ServicesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            From intimate gatherings to grand celebrations, we provide comprehensive event planning services tailored to
-            your unique vision and needs.
+            From intimate gatherings needs.
           </motion.p>
         </div>
       </section>
