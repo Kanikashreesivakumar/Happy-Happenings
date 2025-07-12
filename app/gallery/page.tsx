@@ -386,7 +386,7 @@ export default function GalleryPage() {
         >
           <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Ready to Create Your Own Story?</h2>
           <p className="text-xl text-rose-100 mb-8 max-w-2xl mx-auto">
-            Let us help you create beautiful memories that will be cherished for years to come.
+            Let us help you create beautiful years to come.
           </p>
           <Button
             size="lg"

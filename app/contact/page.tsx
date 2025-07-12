@@ -103,7 +103,7 @@ Message: ${formData.message}`
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Phone</p>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
+                      <p className="text-gray-600">+91 7418761589</p>
                     </div>
                   </div>
 
@@ -113,7 +113,7 @@ Message: ${formData.message}`
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Email</p>
-                      <p className="text-gray-600">hello@happyhappenings.com</p>
+                      <p className="text-gray-600">happyhapennings@gmail.com</p>
                     </div>
                   </div>
 
