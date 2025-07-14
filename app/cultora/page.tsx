@@ -81,12 +81,12 @@ export default function AboutPage() {
         {
           name: "Nikah Ceremonies",
           image: "/m2.jpg?height=300&width=400&text=Nikah+Ceremony",
-          description: "Beautiful Islamic wedding ceremonies with traditional elements",
+          description: "Beautifuh traditional elements",
         },
         {
           name: "Eid Celebrations",
           image: "/m3.jpg?height=300&width=400&text=Eid+Celebration",
-          description: "Joyful Eid festivities with family and community",
+          description: "Joyful Eid family and community",
         },
         {
           name: "Aqiqah Events",
