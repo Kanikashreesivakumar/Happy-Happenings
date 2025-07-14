@@ -192,7 +192,7 @@ export default function HomePage() {
       name: "Jennifer Thompson",
       event: "Corporate Event",
       review:
-        "Outstanding service. The event exceeded all expectations and our guests were amazed.",
+        "Outstanding service.expectations and our guests were amazed.",
       image: "/placeholder.svg?height=80&width=80&text=Jennifer",
       eventImage: "/placeholder.svg?height=300&width=400&text=Corporate+Photo",
       rating: 5,
@@ -201,7 +201,7 @@ export default function HomePage() {
       name: "David & Lisa",
       event: "Engagement Party",
       review:
-        "From planning to execution, everything was seamless. We couldn't have asked for a better team to celebrate with us.",
+        "From planning to We couldn't have asked for a better team to celebrate with us.",
       image: "/placeholder.svg?height=80&width=80&text=David+Lisa",
       eventImage: "/placeholder.svg?height=300&width=400&text=Engagement+Photo",
       rating: 5,
