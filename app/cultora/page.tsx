@@ -111,12 +111,12 @@ export default function AboutPage() {
         {
           name: "Diwali Celebrations",
           image: "/h4.jpg?height=300&width=400&text=Diwali+Festival",
-          description: "Festival of lights celebrations with traditional decorations",
+          description: "Festival celebrations with traditional decorations",
         },
         {
           name: "Puja Ceremonies",
           image: "/h5.jpg?height=300&width=400&text=Puja+Ceremony",
-          description: "Sacred worship ceremonies and spiritual gatherings",
+          description: "Sacred and spiritual gatherings",
         },
       ],
       accent: "bg-orange-100/80",
@@ -134,7 +134,7 @@ export default function AboutPage() {
     {
       icon: Globe,
       title: "Cultural Sensitivity",
-      description: "Our team is trained in diverse cultural practices and customs",
+      description: "Our teamdiverse cultural practices and customs",
     },
     {
       icon: Users,
