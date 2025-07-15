@@ -384,7 +384,7 @@ export default function GalleryPage() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Ready to Create Your Own Story?</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Ready to Create your own stroy?</h2>
           <p className="text-xl text-rose-100 mb-8 max-w-2xl mx-auto">
             Let us help you create beautiful years to come.
           </p>
@@ -393,7 +393,7 @@ export default function GalleryPage() {
             className="bg-white text-rose-600 hover:bg-rose-50 px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
             asChild
           >
-            <Link href="/contact">Start Planning Your Event</Link>
+            <Link href="/contact">Start your celebration with us</Link>
           </Button>
         </motion.div>
       </section>
