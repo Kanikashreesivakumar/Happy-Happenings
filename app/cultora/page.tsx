@@ -50,7 +50,7 @@ export default function AboutPage() {
   const religions = [
     {
       name: "Christian Celebrations",
-      description: "Sacred ceremonies and joyful celebrations honoring Christian traditions",
+      description: "Sacred ceremonies  honoring Christian traditions",
       image: "/c1.jpg?height=400&width=600&text=Christian+Wedding+Ceremony",
       rituals: [
         {
@@ -61,12 +61,12 @@ export default function AboutPage() {
         {
           name: "Baptism Celebrations",
           image: "/c3.jpg?height=300&width=400&text=Baptism+Ceremony",
-          description: "Meaningful baptism ceremonies with family gatherings",
+          description: "Meaningful with family gatherings",
         },
         {
           name: "Confirmation Events",
           image: "/c4.jpg?height=300&width=400&text=Confirmation+Ceremony",
-          description: "Special confirmation celebrations and receptions",
+          description: "Special confirmation and receptions",
         },
       ],
       accent: "bg-blue-100/80",
