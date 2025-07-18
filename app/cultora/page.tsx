@@ -129,7 +129,7 @@ export default function AboutPage() {
     {
       icon: Heart,
       title: "Respect & Inclusion",
-      description: "We honor all cultures and traditions with deep respect and understanding",
+      description: "We honor all cultures and with deep respect and understanding",
     },
     {
       icon: Globe,
@@ -139,7 +139,7 @@ export default function AboutPage() {
     {
       icon: Users,
       title: "Community Focus",
-      description: "Building bridges between communities through beautiful celebrations",
+      description: "Building bridges between communities celebrations",
     },
     {
       icon: Sparkles,
