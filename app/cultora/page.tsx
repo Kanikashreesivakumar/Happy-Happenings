@@ -196,7 +196,7 @@ export default function AboutPage() {
               </h1>
               <p className="text-xl text-stone-600 max-w-2xl mx-auto font-sans">
                 We believe every culture has beautiful traditions worth celebrating. Our diverse team specializes in
-                creating authentic, respectful events that honor your heritage and bring communities together.
+                creating authentic,  together.
               </p>
             </div>
           </motion.div>
