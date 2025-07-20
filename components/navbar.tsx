@@ -29,7 +29,7 @@ export default function Navbar() {
   }, [])
 
   const services = [
-    { title: "Weddings", href: "/services#weddings", description: "Complete wedding planning services" },
+    { title: "Weddings", href: "/services#weddings", description: "Complete wedding services" },
     { title: "Birthdays", href: "/services#birthdays", description: "Memorable birthday celebrations" },
     { title: "Engagements", href: "/services#engagements", description: "Romantic engagement parties" },
     { title: "Corporate Events", href: "/services#corporate", description: "Professional corporate gatherings" },
