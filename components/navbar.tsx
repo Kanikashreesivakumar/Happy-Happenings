@@ -178,7 +178,7 @@ export default function Navbar() {
                                   {item.title}
                                 </div>
                                 <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1 group-hover:text-rose-600/80 transition-colors duration-300">
-                                  View our {item.title.toLowerCase()} collection
+                                  View our {item.title.toLowerCase()} work collections
                                 </p>
                               </div>
                             </Link>
