@@ -304,10 +304,10 @@ export default function TestimonialsPage() {
             viewport={{ once: true }}
           >
             {[
-              { number: "500+", label: "Events Planned" },
+              { number: "300+", label: "Events Planned" },
               { number: "98%", label: "Client Satisfaction" },
               { number: "5★", label: "Average Rating" },
-              { number: "50+", label: "Vendor Partners" },
+              { number: "40+", label: "Vendor Partners" },
             ].map((stat, index) => (
               <motion.div key={index} variants={fadeInUp}>
                 <div className="text-4xl md:text-5xl font-bold text-rose-600 mb-2">{stat.number}</div>
