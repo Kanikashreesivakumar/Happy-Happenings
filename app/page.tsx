@@ -192,7 +192,7 @@ export default function HomePage() {
       name: "Jennifer Thompson",
       event: "Corporate Event",
       review:
-        "Outstanding service. guests were amazed.",
+        "Outstanding service. guests amazed.",
       image: "/placeholder.svg?height=80&width=80&text=Jennifer",
       eventImage: "/placeholder.svg?height=300&width=400&text=Corporate+Photo",
       rating: 5,
