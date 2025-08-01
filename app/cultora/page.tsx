@@ -255,7 +255,6 @@ export default function AboutPage() {
                   index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
                 }`}
               >
-                {/* Main Image */}
                 <motion.div
                   className={index % 2 === 1 ? "lg:col-start-2" : ""}
                   whileHover={{ scale: 1.02 }}
@@ -281,7 +280,7 @@ export default function AboutPage() {
                   </div>
                 </motion.div>
 
-                {/* Content */}
+                
                 <div className={index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}>
                   <motion.div className="relative" whileHover={{ scale: 1.02 }} transition={{ duration: 0.5 }}>
                     <div className="absolute -inset-4 bg-gradient-to-br from-stone-200 via-blue-100/50 to-rose-100/50 rounded-3xl shadow-xl"></div>
@@ -299,7 +298,6 @@ export default function AboutPage() {
 
                       <p className="text-lg text-stone-600 mb-8 leading-relaxed font-sans">{religion.description}</p>
 
-                      {/* Ritual Photos Grid */}
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                         {religion.rituals.map((ritual, ritualIndex) => (
                           <motion.div
