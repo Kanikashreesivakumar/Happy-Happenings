@@ -348,7 +348,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-rose-50/20 via-pink-50 to-rose-50/20">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -381,7 +380,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
       <section className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div
