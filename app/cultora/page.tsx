@@ -214,7 +214,7 @@ export default function AboutPage() {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            {/* Section Header */}
+             
             <motion.div
               className="relative max-w-4xl mx-auto"
               whileHover={{ scale: 1.02 }}
