@@ -393,7 +393,7 @@ export default function GalleryPage() {
             className="bg-white text-rose-600 hover:bg-rose-50 px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
             asChild
           >
-            <Link href="/contact">Start your celebration with us</Link>
+            <Link href="/contact">Lets start your celebration</Link>
           </Button>
         </motion.div>
       </section>
