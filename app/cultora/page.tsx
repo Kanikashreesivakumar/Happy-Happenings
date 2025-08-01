@@ -204,7 +204,6 @@ export default function AboutPage() {
       </section>
 
      
-      {/* Religious Traditions Section */}
       <section className="py-24 px-4 bg-gradient-to-r from-rose-50 via-pink-50 to-rose-50">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -240,7 +239,7 @@ export default function AboutPage() {
             </motion.div>
           </motion.div>
 
-          {/* Religious Traditions */}
+          
           <motion.div
             className="space-y-20"
             variants={staggerContainer}
