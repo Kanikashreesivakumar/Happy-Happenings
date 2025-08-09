@@ -401,11 +401,11 @@ export default function BookNowPage() {
                               <SelectValue placeholder="Select budget range" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="under-5k">Under Rupees 5000</SelectItem>
+                              <SelectItem value="under-5k">Under Rupees 5,000</SelectItem>
                               <SelectItem value="5k-10k">Rupees 5,000 - 10,000</SelectItem>
                               <SelectItem value="10k-20k">Rupees 10,000 - 20,000</SelectItem>
                               <SelectItem value="20k-50k">Rupees 20,000 - 50,000</SelectItem>
-                              <SelectItem value="50k+">Rupees 50000</SelectItem>
+                              <SelectItem value="50k+">Rupees 50,000</SelectItem>
                             </SelectContent>
                           </Select>
                         </motion.div>
