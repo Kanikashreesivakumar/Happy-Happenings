@@ -403,8 +403,8 @@ export default function BookNowPage() {
                             <SelectContent>
                               <SelectItem value="under-5k">Under Rupees 5000</SelectItem>
                               <SelectItem value="5k-10k">Rupees 5000 - 10,000</SelectItem>
-                              <SelectItem value="10k-20k">Rupees 10000-20000</SelectItem>
-                              <SelectItem value="20k-50k">rupees 20,000 - 50,000</SelectItem>
+                              <SelectItem value="10k-20k">Rupees 10000 -20000</SelectItem>
+                              <SelectItem value="20k-50k">Rupees 20000 -50,000</SelectItem>
                               <SelectItem value="50k+">rupees 50000</SelectItem>
                             </SelectContent>
                           </Select>
