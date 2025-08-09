@@ -195,7 +195,7 @@ export default function PackagesPage() {
           >
             <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">Add-On Services</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Enhance your package with additional services to make your event even more special
+              Enhance your package even more special
             </p>
           </motion.div>
 
