@@ -402,7 +402,7 @@ export default function BookNowPage() {
                             </SelectTrigger>
                             <SelectContent>
                               <SelectItem value="under-5k">Under rupees 5,000</SelectItem>
-                              <SelectItem value="5k-10k">5,000 - 10,000</SelectItem>
+                              <SelectItem value="5k-10k">rupees 5,000 - 10,000</SelectItem>
                               <SelectItem value="10k-20k">10,000 - 20,000</SelectItem>
                               <SelectItem value="20k-50k">20,000 - 50,000</SelectItem>
                               <SelectItem value="50k+">50,000+</SelectItem>
