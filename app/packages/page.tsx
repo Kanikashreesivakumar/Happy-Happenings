@@ -229,7 +229,8 @@ export default function PackagesPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">Frequently Asked query</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">Frequently Asked questions
+            </h2>
           </motion.div>
 
           <motion.div
