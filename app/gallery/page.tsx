@@ -384,7 +384,7 @@ export default function GalleryPage() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Ready to Create your own stroy?</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Ready to create your own stroy?</h2>
           <p className="text-xl text-rose-100 mb-8 max-w-2xl mx-auto">
             Let us help you create beautiful years for you!!
           </p>
