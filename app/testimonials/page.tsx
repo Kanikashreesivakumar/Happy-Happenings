@@ -248,7 +248,7 @@ export default function TestimonialsPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">More Happy Clients</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4"> Happy Clients</h2>
             <p className="text-xl text-gray-600">Every event is a new story of joy and celebration</p>
           </motion.div>
 
