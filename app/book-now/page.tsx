@@ -433,7 +433,7 @@ export default function BookNowPage() {
                             <SelectItem value="outdoor">Outdoor Venue</SelectItem>
                             <SelectItem value="both">Open to Both</SelectItem>
                             <SelectItem value="home">Private Home</SelectItem>
-                            <SelectItem value="hotel">Hotel/Resort</SelectItem>
+                            <SelectItem value="hotel">Hotel / Resort</SelectItem>
                             <SelectItem value="restaurant">Restaurant</SelectItem>
                             <SelectItem value="other">Other</SelectItem>
                           </SelectContent>
