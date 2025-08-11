@@ -181,7 +181,7 @@ export default function HomePage() {
   const testimonials = [
     {
       name: "Sarah & Michael",
-      event: "Wedding",
+      event: "wedding",
       review:
         "Happy Happenings made our dream wedding come true! Every detail was perfect, and the team was incredibly professional.",
       image: "/placeholder.svg?height=80&width=80&text=Sarah+Michael",
