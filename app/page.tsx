@@ -149,7 +149,7 @@ export default function HomePage() {
     },
     {
       title: "Perfection",
-      subtitle: "Every detail matters",
+      subtitle: "Every detail matter",
       description:
         "From the smallest] is flawlessly executed.",
       icon: Sparkles,
