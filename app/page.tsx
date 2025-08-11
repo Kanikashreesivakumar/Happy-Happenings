@@ -189,7 +189,7 @@ export default function HomePage() {
       rating: 5,
     },
     {
-      name: "Jennifer Thompson",
+      name: "Jennifer",
       event: "Corporate Event",
       review:
         "Outstanding service. guests amazed.",
