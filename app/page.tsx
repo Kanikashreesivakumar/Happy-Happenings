@@ -148,7 +148,7 @@ export default function HomePage() {
       image: "/placeholder.svg?height=300&width=400&text=Professional+Team",
     },
     {
-      title: "Perfect",
+      title: "Perfection",
       subtitle: "Every detail matters",
       description:
         "From the smallest] is flawlessly executed.",
@@ -158,7 +158,7 @@ export default function HomePage() {
   ]
 
   const services = [
-    { icon: MapPin, title: "Photographyer", image: "/phot.jpg?height=300&width=400&text=Beautiful+Venue" },
+    { icon: MapPin, title: "Photography", image: "/phot.jpg?height=300&width=400&text=Beautiful+Venue" },
     { icon: Palette, title: "Decor & Design", image: "/stg.jpg?height=300&width=400&text=Elegant+Decor" },
     { icon: Utensils, title: "Catering", image: "/ct.jpg?height=300&width=400&text=Gourmet+Catering" },
     { icon: Camera, title: "Make up", image: "/mp.jpg?height=300&width=400&text=Wedding+Photography" },
