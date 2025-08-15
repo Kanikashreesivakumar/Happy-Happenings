@@ -234,7 +234,7 @@ export default function HomePage() {
             
             <Image
               src="/placeholder.svg?height=1080&width=1920&text=Wedding+Background"
-              alt="Wedding celebration"
+              alt="Wedding celebrations"
               fill
               className="object-cover opacity-30"
               priority
