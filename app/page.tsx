@@ -148,7 +148,7 @@ export default function HomePage() {
       image: "/placeholder.svg?height=300&width=400&text=Professional+Team",
     },
     {
-      title: "Perfection",
+      title: "Perfect",
       subtitle: "Every detail matters",
       description:
         "From the smallest] is flawlessly executed.",
