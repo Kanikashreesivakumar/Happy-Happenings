@@ -161,7 +161,7 @@ export default function HomePage() {
     { icon: MapPin, title: "Photography", image: "/phot.jpg?height=300&width=400&text=Beautiful+Venue" },
     { icon: Palette, title: "Decor & Design", image: "/stg.jpg?height=300&width=400&text=Elegant+Decor" },
     { icon: Utensils, title: "Catering", image: "/ct.jpg?height=300&width=400&text=Gourmet+Catering" },
-    { icon: Camera, title: "Make up", image: "/mp.jpg?height=300&width=400&text=Wedding+Photography" },
+    { icon: Camera, title: "Make up ", image: "/mp.jpg?height=300&width=400&text=Wedding+Photography" },
     { icon: Music, title: "Music & DJ", image: "/mu.jpg?height=300&width=400&text=Live+Entertainment" },
     { icon: Palette, title: "Mehendi", image: "/mh.jpg?height=300&width=400&text=Live+Entertainment" },
   ]
@@ -201,7 +201,7 @@ export default function HomePage() {
       name: "David & Lisa",
       event: "Engagement Party",
       review:
-        "From planning to We couldn't  celebrate with us.",
+        "From planning to celebration with us.",
       image: "/placeholder.svg?height=80&width=80&text=David+Lisa",
       eventImage: "/placeholder.svg?height=300&width=400&text=Engagement+Photo",
       rating: 5,
