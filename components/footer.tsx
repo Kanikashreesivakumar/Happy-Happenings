@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services#corporate" className="text-gray-300 hover:text-rose-500 transition-colors">
-                  Corporate Events
+                  Corporate Event
                 </Link>
               </li>
               <li>
@@ -97,7 +97,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services#baby-showers" className="text-gray-300 hover:text-rose-500 transition-colors">
-                  Baby Showers
+                  Baby Shower
                 </Link>
               </li>
             </ul>
