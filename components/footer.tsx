@@ -19,7 +19,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Creating unforgettable memories through planning and flawless execution.
+              Creating unforgettable memories through planning and flawless executions.
             </p>
             <div className="flex gap-4">
               <Link href="#" className="text-gray-400 hover:text-rose-500 transition-colors">
