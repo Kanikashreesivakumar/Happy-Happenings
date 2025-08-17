@@ -266,7 +266,7 @@ export default function HomePage() {
           >
             We Plan Memories,
             <br />
-            <span className="text-rose-600">Not Just Event</span>
+            <span className="text-rose-600">Not Just Events</span>
           </motion.h1>
 
           <motion.p
