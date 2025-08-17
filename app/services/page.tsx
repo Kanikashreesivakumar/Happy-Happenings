@@ -218,7 +218,7 @@ export default function ServicesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            From intimate gatherings needs.
+            From intimate gathering needs.
           </motion.p>
         </div>
       </section>
