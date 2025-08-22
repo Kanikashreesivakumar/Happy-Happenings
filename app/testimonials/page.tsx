@@ -149,7 +149,7 @@ export default function TestimonialsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Don't just take our. Here's what our client have to say about their experience with Happy
+            Don't just take our.What our client have to say about their experience with Happy
             Happenings.
           </motion.p>
         </div>
