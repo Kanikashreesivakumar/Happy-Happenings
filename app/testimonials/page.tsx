@@ -67,7 +67,7 @@ export default function TestimonialsPage() {
       date: "August 2023",
       rating: 5,
       review:
-        "The most beautiful baby shower I could have imagined! The team created such a warm and welcoming atmosphere. Every guest commented on how lovely everything was, from the decorations to the delicious food. Thank you for making this day so special.",
+        "The most beautiful baby shower Ive imagined! The team created such a warm and welcoming atmosphere. Every guest commented on how lovely everything was, from the decorations to the delicious food. Thank you for making this day so special.",
       image: "/placeholder.svg?height=100&width=100&text=Maria",
       eventImage: "/placeholder.svg?height=400&width=600&text=Baby+Shower+Celebration",
     },
