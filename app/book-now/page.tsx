@@ -509,7 +509,7 @@ export default function BookNowPage() {
                       </motion.div>
 
                       <motion.div variants={fadeInUp} className="space-y-2">
-                        <Label htmlFor="specialRequests">Special Requests or Requirements</Label>
+                        <Label htmlFor="specialRequests">Special Requirements</Label>
                         <Textarea
                           id="specialRequests"
                           value={formData.specialRequests}
