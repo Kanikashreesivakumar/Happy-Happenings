@@ -524,7 +524,7 @@ export default function BookNowPage() {
                   {currentStep === 4 && (
                     <motion.div className="space-y-6" variants={staggerContainer} initial="initial" animate="animate">
                       <motion.div variants={fadeInUp}>
-                        <h3 className="text-lg font-semibold text-gray-800 mb-4">Review Your Information</h3>
+                        <h3 className="text-lg font-semibold text-gray-800 mb-4">Review Your Informations</h3>
                         <div className="bg-gray-50 rounded-lg p-6 space-y-4">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
