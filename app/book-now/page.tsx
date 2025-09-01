@@ -481,7 +481,7 @@ export default function BookNowPage() {
                       </motion.div>
 
                       <motion.div variants={fadeInUp} className="space-y-4">
-                        <Label>Additional Service</Label>
+                        <Label>Additional Services</Label>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                           {additionalServices.map((service) => (
                             <div key={service} className="flex items-center space-x-2">
@@ -499,7 +499,7 @@ export default function BookNowPage() {
                       </motion.div>
 
                       <motion.div variants={fadeInUp} className="space-y-2">
-                        <Label htmlFor="preferredStyle">Preferred Style/Theme</Label>
+                        <Label htmlFor="preferredStyle">Preferred Styles</Label>
                         <Input
                           id="preferredStyle"
                           value={formData.preferredStyle}
