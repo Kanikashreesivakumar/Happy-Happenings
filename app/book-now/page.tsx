@@ -555,7 +555,7 @@ export default function BookNowPage() {
                           </div>
                           {formData.selectedServices.length > 0 && (
                             <div>
-                              <strong>Additional Service:</strong>
+                              <strong>Additional Services:</strong>
                               <ul className="list-disc list-inside mt-2">
                                 {formData.selectedServices.map((service) => (
                                   <li key={service} className="text-sm">
