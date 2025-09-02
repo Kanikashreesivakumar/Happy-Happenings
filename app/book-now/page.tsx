@@ -569,7 +569,7 @@ export default function BookNowPage() {
                       </motion.div>
 
                       <motion.div variants={fadeInUp} className="space-y-2">
-                        <Label htmlFor="additionalNotes">Additional Note</Label>
+                        <Label htmlFor="additionalNotes">Additional Notes</Label>
                         <Textarea
                           id="additionalNotes"
                           value={formData.additionalNotes}
