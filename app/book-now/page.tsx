@@ -584,7 +584,7 @@ export default function BookNowPage() {
                         <div className="space-y-2 text-sm text-gray-600">
                           <div className="flex items-center gap-2">
                             <CheckCircle className="w-4 h-4 text-rose-500" />
-                            We'll review your request within 24 hours
+                            We'll review your request within 24 hour
                           </div>
                           <div className="flex items-center gap-2">
                             <CheckCircle className="w-4 h-4 text-rose-500" />
