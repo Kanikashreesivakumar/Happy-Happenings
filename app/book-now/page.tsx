@@ -596,7 +596,7 @@ export default function BookNowPage() {
                           </div>
                           <div className="flex items-center gap-2">
                             <CheckCircle className="w-4 h-4 text-rose-500" />
-                            Start planning your
+                            Start planning your with us 
                           </div>
                         </div>
                       </motion.div>
