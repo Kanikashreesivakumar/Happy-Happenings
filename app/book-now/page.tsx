@@ -588,7 +588,7 @@ export default function BookNowPage() {
                           </div>
                           <div className="flex items-center gap-2">
                             <CheckCircle className="w-4 h-4 text-rose-500" />
-                            Our team will contact you to schedule a consultation
+                            Our 
                           </div>
                           <div className="flex items-center gap-2">
                             <CheckCircle className="w-4 h-4 text-rose-500" />
