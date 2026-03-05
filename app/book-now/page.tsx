@@ -165,7 +165,7 @@ export default function BookNowPage() {
         </div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <motion.h1
-            className="text-5xl md:text-6xl font-serif text-gray-800 mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl font-serif text-gray-800 mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -212,13 +212,13 @@ export default function BookNowPage() {
       <section className="py-8 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div
-            className="flex justify-between items-center"
+            className="flex items-center overflow-x-auto md:overflow-visible"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             {steps.map((step, index) => (
-              <div key={step.number} className="flex items-center">
+              <div key={step.number} className="flex items-center shrink-0">
                 <div className="flex flex-col items-center">
                   <div
                     className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium transition-colors duration-300 ${
@@ -234,7 +234,7 @@ export default function BookNowPage() {
                 </div>
                 {index < steps.length - 1 && (
                   <div
-                    className={`flex-1 h-0.5 mx-4 transition-colors duration-300 ${
+                    className={`h-0.5 w-8 sm:w-12 md:flex-1 mx-2 sm:mx-4 transition-colors duration-300 ${
                       currentStep > step.number ? "bg-rose-500" : "bg-gray-200"
                     }`}
                   />

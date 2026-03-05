@@ -13,7 +13,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
-import { Menu, Phone, ChevronDown } from "lucide-react"
+import { Menu, Phone } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export default function Navbar() {
@@ -114,7 +114,7 @@ export default function Navbar() {
                     </span>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="bg-white border border-gray-200 shadow-xl rounded-xl p-2 mt-2">
-                    <ul className="grid w-[400px] gap-2 p-2 md:w-[500px] md:grid-cols-2">
+                    <ul className="grid w-[min(92vw,400px)] gap-2 p-2 md:w-[500px] md:grid-cols-2">
                       {services.map((service) => (
                         <li key={service.title}>
                           <NavigationMenuLink asChild>
@@ -156,7 +156,7 @@ export default function Navbar() {
                     </span>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="bg-white border border-gray-200 shadow-xl rounded-xl p-2 mt-2">
-                    <ul className="grid w-[600px] gap-2 p-2 md:grid-cols-2">
+                    <ul className="grid w-[min(92vw,600px)] gap-2 p-2 md:grid-cols-2">
                       {galleryItems.map((item) => (
                         <li key={item.title}>
                           <NavigationMenuLink asChild>
@@ -311,11 +311,11 @@ export default function Navbar() {
                   </Link>
                   {/* Add Culture link in mobile menu */}
                   <Link
-                    href="/culture"
+                    href="/cultora"
                     className="text-lg font-medium text-gray-700 hover:text-rose-600 transition-all duration-300 p-3 rounded-lg hover:bg-rose-50 hover:shadow-sm hover:scale-[1.02]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Culture
+                    Cultora
                   </Link>
                   <Link
                     href="/gallery"

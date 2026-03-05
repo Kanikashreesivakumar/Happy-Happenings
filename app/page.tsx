@@ -22,8 +22,7 @@ import {
   ArrowRight,
   Play,
 } from "lucide-react"
-import { useEffect, useState } from "react"
-import { MotionImage } from "@/components/motion-image"
+import { useEffect, useRef, useState } from "react"
 import CathedralFrame from "@/components/cathedral-frame"
 
 const fadeInUp = {
@@ -76,8 +75,8 @@ const floatAnimation = {
 }
 
 export default function HomePage() {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const [isVideoPlaying, setIsVideoPlaying] = useState(true)
+  const videoRef = useRef<HTMLVideoElement | null>(null)
 
   const eventTypes = [
     {
@@ -178,42 +177,21 @@ export default function HomePage() {
     "/s10.jpg?height=400&width=400&text=Corporate+Gala",
   ]
 
-  const testimonials = [
-    {
-      name: "Sarah & Michael",
-      event: "wedding",
-      review:
-        "Happy Happenings made our dream wedding come true! Every detail was perfect, and the team was incredibly professional.",
-      image: "/placeholder.svg?height=80&width=80&text=Sarah+Michael",
-      eventImage: "/placeholder.svg?height=300&width=400&text=Wedding+Photo",
-      rating: 5,
-    },
-    {
-      name: "Jennifer",
-      event: "Corporate Event",
-      review:
-        "Outstanding service. guests amazed.",
-      image: "/placeholder.svg?height=80&width=80&text=Jennifer",
-      eventImage: "/placeholder.svg?height=300&width=400&text=Corporate+Photo",
-      rating: 5,
-    },
-    {
-      name: "David & Lisa",
-      event: "Engagement Party",
-      review:
-        "From planning to celebration with us.",
-      image: "/placeholder.svg?height=80&width=80&text=David+Lisa",
-      eventImage: "/placeholder.svg?height=300&width=400&text=Engagement+Photo",
-      rating: 5,
-    },
-  ]
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)
-    }, 5000)
-    return () => clearInterval(interval)
-  }, [testimonials.length])
+    const videoEl = videoRef.current
+    if (!videoEl) return
+
+    if (isVideoPlaying) {
+      const playPromise = videoEl.play()
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {
+          // Autoplay can be blocked on mobile browsers; ignore.
+        })
+      }
+    } else {
+      videoEl.pause()
+    }
+  }, [isVideoPlaying])
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
@@ -222,6 +200,7 @@ export default function HomePage() {
        
         <div className="absolute inset-0 z-0">
           <video
+            ref={videoRef}
             autoPlay
             muted
             loop
@@ -230,15 +209,6 @@ export default function HomePage() {
             poster="/placeholder.svg?height=1080&width=1920&text=Wedding+Video+Poster"
           >
             <source src="/vid.mp4" type="video/mp4" />
-            
-            
-            <Image
-              src="/placeholder.svg?height=1080&width=1920&text=Wedding+Background"
-              alt="Wedding celebrations"
-              fill
-              className="object-cover opacity-30"
-              priority
-            />
           </video>
         </div>
 
@@ -259,7 +229,7 @@ export default function HomePage() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <motion.h1
-            className="text-5xl md:text-7xl font-serif text-gray-800 mb-6 leading-tight"
+            className="text-4xl sm:text-5xl md:text-7xl font-serif text-gray-800 mb-6 leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
@@ -430,7 +400,7 @@ export default function HomePage() {
             {services.map((service, index) => (
               <motion.div key={service.title} variants={fadeInUp}>
                 <Card className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105">
-                  <div className="relative h-[400px]">
+                  <div className="relative h-64 sm:h-80 lg:h-[400px]">
                     <CathedralFrame
                       src={service.image || "/placeholder.svg"}
                       alt={service.title}

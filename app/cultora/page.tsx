@@ -189,7 +189,7 @@ export default function AboutPage() {
               <Badge className="mb-4 bg-stone-100/80 text-stone-700 px-6 py-2 rounded-full shadow-sm border border-stone-200/50 font-sans">
                 Our Story
               </Badge>
-              <h1 className="text-5xl md:text-6xl font-serif text-stone-800 mb-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-stone-800 mb-6">
                 Celebrating
                 <br />
                 <span className="text-blue-600/80 font-sans font-light italic">All Traditions</span>
@@ -206,38 +206,7 @@ export default function AboutPage() {
      
       <section className="py-24 px-4 bg-gradient-to-r from-rose-50 via-pink-50 to-rose-50">
         <div className="max-w-7xl mx-auto">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-             
-            <motion.div
-              className="relative max-w-4xl mx-auto"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="absolute -inset-4 bg-gradient-to-br from-stone-200 via-blue-100/50 to-rose-100/50 rounded-3xl shadow-xl"></div>
-              <div className="absolute -inset-2 bg-white/80 backdrop-blur-sm rounded-3xl shadow-inner"></div>
-
-              <div className="relative bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-inner border border-white/60">
-                <Badge className="mb-4 bg-blue-100/80 text-blue-700 px-6 py-2 rounded-full shadow-sm border border-blue-200/50 font-sans">
-                  Cultural Diversity
-                </Badge>
-                <h2 className="text-4xl md:text-5xl font-serif text-stone-800 mb-6">
-                  Honoring Sacred
-                  <br />
-                  <span className="text-blue-600/80 font-sans font-light italic">Traditions</span>
-                </h2>
-                <p className="text-xl text-stone-600 font-sans">
-                  We specialize in creating authentic celebrations that respect and honor the beautiful traditions of
-                  different faiths and cultures
-                </p>
-              </div>
-            </motion.div>
-          </motion.div>
+          
 
           
           <motion.div

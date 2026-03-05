@@ -205,7 +205,7 @@ export default function ServicesPage() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
-            className="text-5xl md:text-6xl font-serif text-gray-800 mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl font-serif text-gray-800 mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -243,7 +243,7 @@ export default function ServicesPage() {
                 }`}
               >
                 <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
-                  <div className="relative h-96 rounded-2xl overflow-hidden">
+                  <div className="relative h-64 sm:h-80 md:h-96 rounded-2xl overflow-hidden">
                     <Image src={event.image || "/placeholder.svg"} alt={event.title} fill className="object-cover" />
                     <div className={`absolute inset-0 ${event.color} opacity-20`} />
                   </div>

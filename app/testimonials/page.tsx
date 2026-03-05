@@ -136,7 +136,7 @@ export default function TestimonialsPage() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
-            className="text-5xl md:text-6xl font-serif text-gray-800 mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl font-serif text-gray-800 mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -174,7 +174,7 @@ export default function TestimonialsPage() {
                   />
                 </div>
 
-                <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
+                <CardContent className="p-6 sm:p-8 lg:p-12 flex flex-col justify-center">
                   <Quote className="w-12 h-12 text-rose-300 mb-6" />
 
                   <div className="flex mb-4">
@@ -210,7 +210,7 @@ export default function TestimonialsPage() {
               variant="outline"
               size="sm"
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white border-gray-300 rounded-full w-12 h-12 p-0"
+              className="hidden sm:inline-flex absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white border-gray-300 rounded-full w-12 h-12 p-0"
             >
               <ChevronLeft className="w-5 h-5" />
             </Button>
@@ -219,7 +219,7 @@ export default function TestimonialsPage() {
               variant="outline"
               size="sm"
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white border-gray-300 rounded-full w-12 h-12 p-0"
+              className="hidden sm:inline-flex absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white border-gray-300 rounded-full w-12 h-12 p-0"
             >
               <ChevronRight className="w-5 h-5" />
             </Button>
