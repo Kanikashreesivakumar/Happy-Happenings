@@ -217,7 +217,7 @@ export default function Navbar() {
                         : "text-black hover:text-rose-200 before:bg-white/10 hover:shadow-lg",
                     )}
                   >
-                    <span className="relative z-10">Packages</span>
+                    <span className="relative z-10">Package</span>
                   </CustomNavLink>
                 </NavigationMenuItem>
 
